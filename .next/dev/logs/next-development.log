@@ -1,0 +1,32 @@
+{"timestamp":"00:00:24.266","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:27.425","source":"Server","level":"LOG","message":"○ Compiling / ..."}
+{"timestamp":"00:00:37.396","source":"Server","level":"WARN","message":"⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using \"http://localhost:3000\". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase"}
+{"timestamp":"00:00:42.376","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:08:36.103","source":"Server","level":"LOG","message":"✓ Compiled in 996ms"}
+{"timestamp":"00:08:37.156","source":"Server","level":"LOG","message":"✓ Compiled in 324ms"}
+{"timestamp":"00:08:37.672","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload due to a runtime error."}
+{"timestamp":"00:08:39.656","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:08:40.494","source":"Server","level":"LOG","message":"✓ Compiled in 241ms"}
+{"timestamp":"00:08:41.976","source":"Server","level":"ERROR","message":"⨯ \"The requested resource isn't a valid image for\" \"/images/spain.webp\" \"received\" null"}
+{"timestamp":"00:08:44.179","source":"Server","level":"LOG","message":"✓ Compiled in 189ms"}
+{"timestamp":"00:08:53.009","source":"Server","level":"LOG","message":"✓ Compiled in 213ms"}
+{"timestamp":"00:08:53.487","source":"Server","level":"ERROR","message":"⨯ \"The requested resource isn't a valid image for\" \"/images/spain/spain\\n                  .webp\" \"received\" null"}
+{"timestamp":"00:08:54.842","source":"Server","level":"LOG","message":"✓ Compiled in 154ms"}
+{"timestamp":"00:08:55.108","source":"Server","level":"ERROR","message":"⨯ \"The requested resource isn't a valid image for\" \"/images/spain/spain\\n                .webp\" \"received\" null"}
+{"timestamp":"00:08:58.689","source":"Server","level":"LOG","message":"✓ Compiled in 178ms"}
+{"timestamp":"00:14:00.129","source":"Server","level":"ERROR","message":"⨯ \"The requested resource isn't a valid image for\" \"/images/spain/andalusia-landscape.webp\" \"received\" null"}
+{"timestamp":"00:16:57.500","source":"Server","level":"LOG","message":"✓ Compiled in 377ms"}
+{"timestamp":"00:17:35.932","source":"Server","level":"LOG","message":"✓ Compiled in 299ms"}
+{"timestamp":"00:17:37.811","source":"Server","level":"LOG","message":"✓ Compiled in 385ms"}
+{"timestamp":"00:17:38.293","source":"Server","level":"ERROR","message":"⨯ \"The requested resource isn't a valid image for\" \"/images/spain/Gibralfaro.webp\" \"received\" null"}
+{"timestamp":"00:17:57.687","source":"Server","level":"ERROR","message":"⨯ \"The requested resource isn't a valid image for\" \"/images/spain/Gibralfaro.webp\" \"received\" null"}
+{"timestamp":"00:17:57.785","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:18:16.062","source":"Server","level":"LOG","message":"✓ Compiled in 204ms"}
+{"timestamp":"00:18:17.751","source":"Browser","level":"WARN","message":"Image with src \"/images/spain/Gibralfaro .webp\" was detected as the Largest Contentful Paint (LCP). Please add the `loading=\"eager\"` property if this image is above the fold.\nRead more: https://nextjs.org/docs/app/api-reference/components/image#loading"}
+{"timestamp":"00:18:17.874","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mImage with src \\\"/images/spain/Gibralfaro .webp\\\" was detected as the Largest Contentful Paint (LCP). Please add the `loading=\\\"eager\\\"` property if this image is above the fold.\\nRead more: https://nextjs.org/docs/app/api-reference/components/image#loading\\u001b[39m\""}
+{"timestamp":"00:20:34.916","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:26:45.723","source":"Server","level":"LOG","message":"✓ Compiled in 448ms"}
+{"timestamp":"00:35:40.045","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:49:59.668","source":"Server","level":"LOG","message":"✓ Compiled in 931ms"}
+{"timestamp":"00:52:51.795","source":"Server","level":"LOG","message":"✓ Compiled in 395ms"}
+{"timestamp":"00:55:26.268","source":"Server","level":"LOG","message":"✓ Compiled in 441ms"}
