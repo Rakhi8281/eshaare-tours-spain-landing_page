@@ -10,6 +10,7 @@ export default function SpainVisaPage() {
   const [activeDocTab, setActiveDocTab] = useState<number>(0);
   const [showChatBubble, setShowChatBubble] = useState<boolean>(true);
 
+  // Controlled form values for instant sanitization & validation
   const [formData, setFormData] = useState({
     fullName: "",
     phone: "",
@@ -65,23 +66,28 @@ export default function SpainVisaPage() {
     }
 
     setIsSubmittingHero(true);
-    const urlParams = new URLSearchParams(window.location.search);
+    const urlParams = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : null;
+    const currentUrl = typeof window !== "undefined" ? window.location.href : "";
 
     try {
       const payload = {
+        sheetName: "eshaare-tours-spain-landing-page",
+        leadSource: "eshaare-tours-spain-landing-page",
         fullName: formData.fullName,
         phone: formData.phone,
         email: formData.email,
         residenceLocation: formData.residenceLocation,
-        source: "Hero Lead Form - Spain",
         service: "Spain Visa",
-        page: window.location.href,
-        gclid: urlParams.get("gclid") || "",
-        gbraid: urlParams.get("gbraid") || "",
-        wbraid: urlParams.get("wbraid") || "",
-        campaign: urlParams.get("utm_campaign") || "",
-        adgroup: urlParams.get("utm_content") || "",
-        keyword: urlParams.get("utm_term") || "",
+        formLocation: "Hero Lead Form - Spain",
+        page: currentUrl,
+        landingPageUrl: currentUrl,
+        formPageUrl: currentUrl,
+        gclid: urlParams?.get("gclid") || "",
+        gbraid: urlParams?.get("gbraid") || "",
+        wbraid: urlParams?.get("wbraid") || "",
+        campaign: urlParams?.get("utm_campaign") || urlParams?.get("campaign") || "",
+        adgroup: urlParams?.get("utm_content") || urlParams?.get("adgroup") || "",
+        keyword: urlParams?.get("utm_term") || urlParams?.get("keyword") || "",
       };
 
       const res = await fetch("/api/lead", {
@@ -118,23 +124,28 @@ export default function SpainVisaPage() {
     }
 
     setIsSubmittingBottom(true);
-    const urlParams = new URLSearchParams(window.location.search);
+    const urlParams = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : null;
+    const currentUrl = typeof window !== "undefined" ? window.location.href : "";
 
     try {
       const payload = {
+        sheetName: "eshaare-tours-spain-landing-page",
+        leadSource: "eshaare-tours-spain-landing-page",
         fullName: bottomFormData.fullName,
         phone: bottomFormData.phone,
         email: bottomFormData.email,
         residenceLocation: bottomFormData.residenceLocation,
-        source: "Bottom Lead Form - Spain",
         service: "Spain Visa",
-        page: window.location.href,
-        gclid: urlParams.get("gclid") || "",
-        gbraid: urlParams.get("gbraid") || "",
-        wbraid: urlParams.get("wbraid") || "",
-        campaign: urlParams.get("utm_campaign") || "",
-        adgroup: urlParams.get("utm_content") || "",
-        keyword: urlParams.get("utm_term") || "",
+        formLocation: "Bottom Lead Form - Spain",
+        page: currentUrl,
+        landingPageUrl: currentUrl,
+        formPageUrl: currentUrl,
+        gclid: urlParams?.get("gclid") || "",
+        gbraid: urlParams?.get("gbraid") || "",
+        wbraid: urlParams?.get("wbraid") || "",
+        campaign: urlParams?.get("utm_campaign") || urlParams?.get("campaign") || "",
+        adgroup: urlParams?.get("utm_content") || urlParams?.get("adgroup") || "",
+        keyword: urlParams?.get("utm_term") || urlParams?.get("keyword") || "",
       };
 
       const res = await fetch("/api/lead", {

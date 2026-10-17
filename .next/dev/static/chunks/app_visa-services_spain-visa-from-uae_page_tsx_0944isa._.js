@@ -71,22 +71,27 @@ function SpainVisaPage() {
             return;
         }
         setIsSubmittingHero(true);
-        const urlParams = new URLSearchParams(window.location.search);
+        const urlParams = ("TURBOPACK compile-time truthy", 1) ? new URLSearchParams(window.location.search) : "TURBOPACK unreachable";
+        const currentUrl = ("TURBOPACK compile-time truthy", 1) ? window.location.href : "TURBOPACK unreachable";
         try {
             const payload = {
+                sheetName: "eshaare-tours-spain-landing-page",
+                leadSource: "eshaare-tours-spain-landing-page",
                 fullName: formData.fullName,
                 phone: formData.phone,
                 email: formData.email,
                 residenceLocation: formData.residenceLocation,
-                source: "Hero Lead Form - Spain",
                 service: "Spain Visa",
-                page: window.location.href,
-                gclid: urlParams.get("gclid") || "",
-                gbraid: urlParams.get("gbraid") || "",
-                wbraid: urlParams.get("wbraid") || "",
-                campaign: urlParams.get("utm_campaign") || "",
-                adgroup: urlParams.get("utm_content") || "",
-                keyword: urlParams.get("utm_term") || ""
+                formLocation: "Hero Lead Form - Spain",
+                page: currentUrl,
+                landingPageUrl: currentUrl,
+                formPageUrl: currentUrl,
+                gclid: urlParams?.get("gclid") || "",
+                gbraid: urlParams?.get("gbraid") || "",
+                wbraid: urlParams?.get("wbraid") || "",
+                campaign: urlParams?.get("utm_campaign") || urlParams?.get("campaign") || "",
+                adgroup: urlParams?.get("utm_content") || urlParams?.get("adgroup") || "",
+                keyword: urlParams?.get("utm_term") || urlParams?.get("keyword") || ""
             };
             const res = await fetch("/api/lead", {
                 method: "POST",
@@ -124,22 +129,27 @@ function SpainVisaPage() {
             return;
         }
         setIsSubmittingBottom(true);
-        const urlParams = new URLSearchParams(window.location.search);
+        const urlParams = ("TURBOPACK compile-time truthy", 1) ? new URLSearchParams(window.location.search) : "TURBOPACK unreachable";
+        const currentUrl = ("TURBOPACK compile-time truthy", 1) ? window.location.href : "TURBOPACK unreachable";
         try {
             const payload = {
+                sheetName: "eshaare-tours-spain-landing-page",
+                leadSource: "eshaare-tours-spain-landing-page",
                 fullName: bottomFormData.fullName,
                 phone: bottomFormData.phone,
                 email: bottomFormData.email,
                 residenceLocation: bottomFormData.residenceLocation,
-                source: "Bottom Lead Form - Spain",
                 service: "Spain Visa",
-                page: window.location.href,
-                gclid: urlParams.get("gclid") || "",
-                gbraid: urlParams.get("gbraid") || "",
-                wbraid: urlParams.get("wbraid") || "",
-                campaign: urlParams.get("utm_campaign") || "",
-                adgroup: urlParams.get("utm_content") || "",
-                keyword: urlParams.get("utm_term") || ""
+                formLocation: "Bottom Lead Form - Spain",
+                page: currentUrl,
+                landingPageUrl: currentUrl,
+                formPageUrl: currentUrl,
+                gclid: urlParams?.get("gclid") || "",
+                gbraid: urlParams?.get("gbraid") || "",
+                wbraid: urlParams?.get("wbraid") || "",
+                campaign: urlParams?.get("utm_campaign") || urlParams?.get("campaign") || "",
+                adgroup: urlParams?.get("utm_content") || urlParams?.get("adgroup") || "",
+                keyword: urlParams?.get("utm_term") || urlParams?.get("keyword") || ""
             };
             const res = await fetch("/api/lead", {
                 method: "POST",
@@ -229,7 +239,7 @@ function SpainVisaPage() {
                                         className: "jsx-4c3226a5b4c3c4ec" + " " + "sm:!h-8 lg:!h-14 shrink-0 transition-transform duration-300 group-hover:scale-105"
                                     }, void 0, false, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 227,
+                                        lineNumber: 237,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -243,7 +253,7 @@ function SpainVisaPage() {
                                                 children: "Eshaare Tours"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 234,
+                                                lineNumber: 244,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -251,19 +261,19 @@ function SpainVisaPage() {
                                                 children: "Connecting Dreams Into Destinations"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 242,
+                                                lineNumber: 252,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 233,
+                                        lineNumber: 243,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                lineNumber: 226,
+                                lineNumber: 236,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -275,7 +285,7 @@ function SpainVisaPage() {
                                         children: "Visa Services"
                                     }, void 0, false, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 250,
+                                        lineNumber: 260,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -284,7 +294,7 @@ function SpainVisaPage() {
                                         children: "Requirements"
                                     }, void 0, false, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 253,
+                                        lineNumber: 263,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -293,7 +303,7 @@ function SpainVisaPage() {
                                         children: "Process"
                                     }, void 0, false, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 256,
+                                        lineNumber: 266,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -302,7 +312,7 @@ function SpainVisaPage() {
                                         children: "Destinations"
                                     }, void 0, false, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 259,
+                                        lineNumber: 269,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -311,13 +321,13 @@ function SpainVisaPage() {
                                         children: "Contact"
                                     }, void 0, false, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 262,
+                                        lineNumber: 272,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                lineNumber: 249,
+                                lineNumber: 259,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -337,19 +347,19 @@ function SpainVisaPage() {
                                                     className: "jsx-4c3226a5b4c3c4ec"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 276,
+                                                    lineNumber: 286,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 275,
+                                                lineNumber: 285,
                                                 columnNumber: 15
                                             }, this),
                                             "WhatsApp Support"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 269,
+                                        lineNumber: 279,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -361,13 +371,13 @@ function SpainVisaPage() {
                                         children: "Start Application"
                                     }, void 0, false, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 280,
+                                        lineNumber: 290,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                lineNumber: 268,
+                                lineNumber: 278,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -387,12 +397,12 @@ function SpainVisaPage() {
                                         className: "jsx-4c3226a5b4c3c4ec"
                                     }, void 0, false, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 297,
+                                        lineNumber: 307,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 296,
+                                    lineNumber: 306,
                                     columnNumber: 15
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                     fill: "none",
@@ -407,23 +417,23 @@ function SpainVisaPage() {
                                         className: "jsx-4c3226a5b4c3c4ec"
                                     }, void 0, false, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 301,
+                                        lineNumber: 311,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 300,
+                                    lineNumber: 310,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                lineNumber: 290,
+                                lineNumber: 300,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                        lineNumber: 224,
+                        lineNumber: 234,
                         columnNumber: 9
                     }, this),
                     mobileMenuOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -439,7 +449,7 @@ function SpainVisaPage() {
                                         children: "Visa Services"
                                     }, void 0, false, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 311,
+                                        lineNumber: 321,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -449,7 +459,7 @@ function SpainVisaPage() {
                                         children: "Requirements"
                                     }, void 0, false, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 318,
+                                        lineNumber: 328,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -459,7 +469,7 @@ function SpainVisaPage() {
                                         children: "Process"
                                     }, void 0, false, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 325,
+                                        lineNumber: 335,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -469,7 +479,7 @@ function SpainVisaPage() {
                                         children: "Destinations"
                                     }, void 0, false, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 332,
+                                        lineNumber: 342,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -479,13 +489,13 @@ function SpainVisaPage() {
                                         children: "Contact"
                                     }, void 0, false, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 339,
+                                        lineNumber: 349,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                lineNumber: 310,
+                                lineNumber: 320,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -501,7 +511,7 @@ function SpainVisaPage() {
                                         children: "Start Application"
                                     }, void 0, false, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 348,
+                                        lineNumber: 358,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -514,30 +524,30 @@ function SpainVisaPage() {
                                             children: "💬 Chat on WhatsApp"
                                         }, void 0, false, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 362,
+                                            lineNumber: 372,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 356,
+                                        lineNumber: 366,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                lineNumber: 347,
+                                lineNumber: 357,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                        lineNumber: 309,
+                        lineNumber: 319,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                lineNumber: 223,
+                lineNumber: 233,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -555,27 +565,27 @@ function SpainVisaPage() {
                                 sizes: "100vw"
                             }, void 0, false, {
                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                lineNumber: 373,
+                                lineNumber: 383,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "jsx-4c3226a5b4c3c4ec" + " " + "absolute inset-0 bg-gradient-to-r from-[#06241b]/90 via-[#06241b]/55 to-black/20"
                             }, void 0, false, {
                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                lineNumber: 382,
+                                lineNumber: 392,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "jsx-4c3226a5b4c3c4ec" + " " + "absolute inset-0 bg-gradient-to-t from-[#06241b]/70 via-transparent to-[#06241b]/20"
                             }, void 0, false, {
                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                lineNumber: 383,
+                                lineNumber: 393,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                        lineNumber: 372,
+                        lineNumber: 382,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -594,7 +604,7 @@ function SpainVisaPage() {
                                                     children: "5.0"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 392,
+                                                    lineNumber: 402,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -602,7 +612,7 @@ function SpainVisaPage() {
                                                     children: "★★★★★"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 393,
+                                                    lineNumber: 403,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -610,13 +620,13 @@ function SpainVisaPage() {
                                                     children: "Google Reviews"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 394,
+                                                    lineNumber: 404,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 391,
+                                            lineNumber: 401,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -624,7 +634,7 @@ function SpainVisaPage() {
                                             children: "SPAIN VISA FROM UAE"
                                         }, void 0, false, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 398,
+                                            lineNumber: 408,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -635,7 +645,7 @@ function SpainVisaPage() {
                                             children: "Your Spain journey starts here."
                                         }, void 0, false, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 403,
+                                            lineNumber: 413,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -643,7 +653,7 @@ function SpainVisaPage() {
                                             children: "Professional visa application assistance for UAE residents — from document review and application preparation to appointment guidance."
                                         }, void 0, false, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 411,
+                                            lineNumber: 421,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -658,7 +668,7 @@ function SpainVisaPage() {
                                                             children: "Start Your Spain Visa Application"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 421,
+                                                            lineNumber: 431,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -674,18 +684,18 @@ function SpainVisaPage() {
                                                                 className: "jsx-4c3226a5b4c3c4ec"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                lineNumber: 423,
+                                                                lineNumber: 433,
                                                                 columnNumber: 21
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 422,
+                                                            lineNumber: 432,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 417,
+                                                    lineNumber: 427,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -702,12 +712,12 @@ function SpainVisaPage() {
                                                                 className: "jsx-4c3226a5b4c3c4ec"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                lineNumber: 433,
+                                                                lineNumber: 443,
                                                                 columnNumber: 21
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 432,
+                                                            lineNumber: 442,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -715,19 +725,19 @@ function SpainVisaPage() {
                                                             children: "Chat on WhatsApp"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 435,
+                                                            lineNumber: 445,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 426,
+                                                    lineNumber: 436,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 416,
+                                            lineNumber: 426,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -741,7 +751,7 @@ function SpainVisaPage() {
                                                             children: "✔"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 442,
+                                                            lineNumber: 452,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -749,13 +759,13 @@ function SpainVisaPage() {
                                                             children: "100% Document Verification"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 443,
+                                                            lineNumber: 453,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 441,
+                                                    lineNumber: 451,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -766,7 +776,7 @@ function SpainVisaPage() {
                                                             children: "✔"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 446,
+                                                            lineNumber: 456,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -774,13 +784,13 @@ function SpainVisaPage() {
                                                             children: "Fast-Track BLS Appointment"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 447,
+                                                            lineNumber: 457,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 445,
+                                                    lineNumber: 455,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -791,7 +801,7 @@ function SpainVisaPage() {
                                                             children: "✔"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 450,
+                                                            lineNumber: 460,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -799,25 +809,25 @@ function SpainVisaPage() {
                                                             children: "Transparent Pricing"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 451,
+                                                            lineNumber: 461,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 449,
+                                                    lineNumber: 459,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 440,
+                                            lineNumber: 450,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 389,
+                                    lineNumber: 399,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -834,7 +844,7 @@ function SpainVisaPage() {
                                                         children: "UAE Resident Quick Check"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 460,
+                                                        lineNumber: 470,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -842,13 +852,13 @@ function SpainVisaPage() {
                                                         children: "Share your details and our team will get in touch."
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 463,
+                                                        lineNumber: 473,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 459,
+                                                lineNumber: 469,
                                                 columnNumber: 17
                                             }, this),
                                             formSubmitted ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -859,7 +869,7 @@ function SpainVisaPage() {
                                                         children: "✓"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 470,
+                                                        lineNumber: 480,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -867,7 +877,7 @@ function SpainVisaPage() {
                                                         children: "Inquiry Received!"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 473,
+                                                        lineNumber: 483,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -875,7 +885,7 @@ function SpainVisaPage() {
                                                         children: "Thank you! Our Spain Visa specialist will review your details and contact you within 15 minutes."
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 476,
+                                                        lineNumber: 486,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -884,13 +894,13 @@ function SpainVisaPage() {
                                                         children: "Submit another inquiry"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 479,
+                                                        lineNumber: 489,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 469,
+                                                lineNumber: 479,
                                                 columnNumber: 19
                                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                                                 onSubmit: handleHeroSubmit,
@@ -901,7 +911,7 @@ function SpainVisaPage() {
                                                         children: heroError
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 489,
+                                                        lineNumber: 499,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -912,7 +922,7 @@ function SpainVisaPage() {
                                                                 children: "Full Name *"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                lineNumber: 496,
+                                                                lineNumber: 506,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -927,13 +937,13 @@ function SpainVisaPage() {
                                                                 className: "jsx-4c3226a5b4c3c4ec" + " " + "w-full bg-stone-50 border border-stone-200 rounded-xl px-4 py-3 text-xs sm:text-sm text-stone-800 placeholder-stone-400 focus:outline-none focus:border-[#0b6e52] focus:bg-white transition-all shadow-2xs"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                lineNumber: 499,
+                                                                lineNumber: 509,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 495,
+                                                        lineNumber: 505,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -944,7 +954,7 @@ function SpainVisaPage() {
                                                                 children: "Phone Number *"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                lineNumber: 511,
+                                                                lineNumber: 521,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -959,13 +969,13 @@ function SpainVisaPage() {
                                                                 className: "jsx-4c3226a5b4c3c4ec" + " " + "w-full bg-stone-50 border border-stone-200 rounded-xl px-4 py-3 text-xs sm:text-sm text-stone-800 placeholder-stone-400 focus:outline-none focus:border-[#0b6e52] focus:bg-white transition-all shadow-2xs"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                lineNumber: 514,
+                                                                lineNumber: 524,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 510,
+                                                        lineNumber: 520,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -976,7 +986,7 @@ function SpainVisaPage() {
                                                                 children: "Email Address *"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                lineNumber: 526,
+                                                                lineNumber: 536,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -991,13 +1001,13 @@ function SpainVisaPage() {
                                                                 className: "jsx-4c3226a5b4c3c4ec" + " " + "w-full bg-stone-50 border border-stone-200 rounded-xl px-4 py-3 text-xs sm:text-sm text-stone-800 placeholder-stone-400 focus:outline-none focus:border-[#0b6e52] focus:bg-white transition-all shadow-2xs"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                lineNumber: 529,
+                                                                lineNumber: 539,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 525,
+                                                        lineNumber: 535,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1008,7 +1018,7 @@ function SpainVisaPage() {
                                                                 children: "UAE Residence Location *"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                lineNumber: 541,
+                                                                lineNumber: 551,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -1025,7 +1035,7 @@ function SpainVisaPage() {
                                                                         children: "Dubai"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                        lineNumber: 549,
+                                                                        lineNumber: 559,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1034,7 +1044,7 @@ function SpainVisaPage() {
                                                                         children: "Abu Dhabi"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                        lineNumber: 550,
+                                                                        lineNumber: 560,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1043,7 +1053,7 @@ function SpainVisaPage() {
                                                                         children: "Sharjah"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                        lineNumber: 551,
+                                                                        lineNumber: 561,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1052,19 +1062,19 @@ function SpainVisaPage() {
                                                                         children: "Ajman / RAK / UAQ / Fujairah"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                        lineNumber: 552,
+                                                                        lineNumber: 562,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                lineNumber: 544,
+                                                                lineNumber: 554,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 540,
+                                                        lineNumber: 550,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1078,7 +1088,7 @@ function SpainVisaPage() {
                                                                 children: "Submitting Lead..."
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                lineNumber: 564,
+                                                                lineNumber: 574,
                                                                 columnNumber: 27
                                                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                                                                 children: [
@@ -1087,7 +1097,7 @@ function SpainVisaPage() {
                                                                         children: "Get Free Visa Consultation"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                        lineNumber: 567,
+                                                                        lineNumber: 577,
                                                                         columnNumber: 29
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1095,23 +1105,23 @@ function SpainVisaPage() {
                                                                         children: "→"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                        lineNumber: 568,
+                                                                        lineNumber: 578,
                                                                         columnNumber: 29
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                lineNumber: 566,
+                                                                lineNumber: 576,
                                                                 columnNumber: 27
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 558,
+                                                            lineNumber: 568,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 557,
+                                                        lineNumber: 567,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1119,41 +1129,41 @@ function SpainVisaPage() {
                                                         children: "Your details are handled with care and confidentiality."
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 575,
+                                                        lineNumber: 585,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 487,
+                                                lineNumber: 497,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 458,
+                                        lineNumber: 468,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 457,
+                                    lineNumber: 467,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                            lineNumber: 387,
+                            lineNumber: 397,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                        lineNumber: 386,
+                        lineNumber: 396,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                lineNumber: 370,
+                lineNumber: 380,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1181,17 +1191,17 @@ function SpainVisaPage() {
                                                 className: "jsx-4c3226a5b4c3c4ec"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 593,
+                                                lineNumber: 603,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 592,
+                                            lineNumber: 602,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 591,
+                                        lineNumber: 601,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1202,7 +1212,7 @@ function SpainVisaPage() {
                                                 children: "Expert Visa Guidance"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 597,
+                                                lineNumber: 607,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1210,19 +1220,19 @@ function SpainVisaPage() {
                                                 children: "Dedicated Schengen specialists guiding you through every requirement step-by-step."
                                             }, void 0, false, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 598,
+                                                lineNumber: 608,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 596,
+                                        lineNumber: 606,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                lineNumber: 590,
+                                lineNumber: 600,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1243,17 +1253,17 @@ function SpainVisaPage() {
                                                 className: "jsx-4c3226a5b4c3c4ec"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 607,
+                                                lineNumber: 617,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 606,
+                                            lineNumber: 616,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 605,
+                                        lineNumber: 615,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1264,7 +1274,7 @@ function SpainVisaPage() {
                                                 children: "Clear Documentation"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 611,
+                                                lineNumber: 621,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1272,19 +1282,19 @@ function SpainVisaPage() {
                                                 children: "Rigorous document auditing prevents common embassy refusal triggers before submission."
                                             }, void 0, false, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 612,
+                                                lineNumber: 622,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 610,
+                                        lineNumber: 620,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                lineNumber: 604,
+                                lineNumber: 614,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1305,17 +1315,17 @@ function SpainVisaPage() {
                                                 className: "jsx-4c3226a5b4c3c4ec"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 621,
+                                                lineNumber: 631,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 620,
+                                            lineNumber: 630,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 619,
+                                        lineNumber: 629,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1326,7 +1336,7 @@ function SpainVisaPage() {
                                                 children: "Dedicated Support"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 625,
+                                                lineNumber: 635,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1334,35 +1344,35 @@ function SpainVisaPage() {
                                                 children: "Real-time status updates and end-to-end concierge support across Dubai and Abu Dhabi."
                                             }, void 0, false, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 626,
+                                                lineNumber: 636,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 624,
+                                        lineNumber: 634,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                lineNumber: 618,
+                                lineNumber: 628,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                        lineNumber: 589,
+                        lineNumber: 599,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                    lineNumber: 588,
+                    lineNumber: 598,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                lineNumber: 587,
+                lineNumber: 597,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1378,7 +1388,7 @@ function SpainVisaPage() {
                                     children: "DESTINATION HIGHLIGHT"
                                 }, void 0, false, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 640,
+                                    lineNumber: 650,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1386,7 +1396,7 @@ function SpainVisaPage() {
                                     children: "Explore Spain: From Madrid to Costa del Sol"
                                 }, void 0, false, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 643,
+                                    lineNumber: 653,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1394,7 +1404,7 @@ function SpainVisaPage() {
                                     children: "Spain offers an unrivaled blend of golden beaches, historic palaces, world-renowned culinary arts, and vibrant Mediterranean culture. Whether you plan to admire Antoni Gaudí’s architectural wonders in Barcelona, visit the Royal Palace of Madrid, or relax along Andalusia’s sun-kissed coastlines—your dream trip is just one visa away."
                                 }, void 0, false, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 646,
+                                    lineNumber: 656,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1402,7 +1412,7 @@ function SpainVisaPage() {
                                     children: "With a Spain Schengen Visa issued through Eshaare Tours, you gain entry to Spain as well as unrestricted travel access across all 29 European Schengen member states."
                                 }, void 0, false, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 649,
+                                    lineNumber: 659,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1416,7 +1426,7 @@ function SpainVisaPage() {
                                                     children: "90 Days"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 656,
+                                                    lineNumber: 666,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1424,13 +1434,13 @@ function SpainVisaPage() {
                                                     children: "Max Stay"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 657,
+                                                    lineNumber: 667,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 655,
+                                            lineNumber: 665,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1441,7 +1451,7 @@ function SpainVisaPage() {
                                                     children: "29 States"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 660,
+                                                    lineNumber: 670,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1449,13 +1459,13 @@ function SpainVisaPage() {
                                                     children: "Schengen Access"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 661,
+                                                    lineNumber: 671,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 659,
+                                            lineNumber: 669,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1466,7 +1476,7 @@ function SpainVisaPage() {
                                                     children: "15 Days"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 664,
+                                                    lineNumber: 674,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1474,19 +1484,19 @@ function SpainVisaPage() {
                                                     children: "Processing Time"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 665,
+                                                    lineNumber: 675,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 663,
+                                            lineNumber: 673,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 654,
+                                    lineNumber: 664,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1500,7 +1510,7 @@ function SpainVisaPage() {
                                                 children: "Plan Your Spain Trip With Us"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 674,
+                                                lineNumber: 684,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -1516,29 +1526,29 @@ function SpainVisaPage() {
                                                     className: "jsx-4c3226a5b4c3c4ec"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 676,
+                                                    lineNumber: 686,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 675,
+                                                lineNumber: 685,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 670,
+                                        lineNumber: 680,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 669,
+                                    lineNumber: 679,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                            lineNumber: 639,
+                            lineNumber: 649,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1556,19 +1566,19 @@ function SpainVisaPage() {
                                             sizes: "(max-width: 1024px) 100vw, 600px"
                                         }, void 0, false, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 686,
+                                            lineNumber: 696,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 685,
+                                        lineNumber: 695,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "jsx-4c3226a5b4c3c4ec" + " " + "absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"
                                     }, void 0, false, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 694,
+                                        lineNumber: 704,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1579,7 +1589,7 @@ function SpainVisaPage() {
                                                 children: "Capital City"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 696,
+                                                lineNumber: 706,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1587,7 +1597,7 @@ function SpainVisaPage() {
                                                 children: "Royal Palace of Madrid"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 699,
+                                                lineNumber: 709,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1595,35 +1605,35 @@ function SpainVisaPage() {
                                                 children: "Immerse yourself in centuries of royal history and majestic plazas."
                                             }, void 0, false, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 700,
+                                                lineNumber: 710,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 695,
+                                        lineNumber: 705,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                lineNumber: 684,
+                                lineNumber: 694,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                            lineNumber: 683,
+                            lineNumber: 693,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                    lineNumber: 637,
+                    lineNumber: 647,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                lineNumber: 636,
+                lineNumber: 646,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1640,7 +1650,7 @@ function SpainVisaPage() {
                                     children: "OUR SERVICES & SOLUTIONS"
                                 }, void 0, false, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 713,
+                                    lineNumber: 723,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1648,7 +1658,7 @@ function SpainVisaPage() {
                                     children: "Professional Visa & Travel Solutions"
                                 }, void 0, false, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 716,
+                                    lineNumber: 726,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1656,13 +1666,13 @@ function SpainVisaPage() {
                                     children: "Comprehensive end-to-end guidance tailored for UAE residents seeking seamless global mobility."
                                 }, void 0, false, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 719,
+                                    lineNumber: 729,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                            lineNumber: 712,
+                            lineNumber: 722,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1682,12 +1692,12 @@ function SpainVisaPage() {
                                                         className: "jsx-4c3226a5b4c3c4ec" + " " + "absolute inset-0 !w-full !h-full !object-cover !object-center transition-transform duration-500 group-hover:scale-105"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 729,
+                                                        lineNumber: 739,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 728,
+                                                    lineNumber: 738,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1698,7 +1708,7 @@ function SpainVisaPage() {
                                                             children: "DOORSTEP SERVICE"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 736,
+                                                            lineNumber: 746,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1706,7 +1716,7 @@ function SpainVisaPage() {
                                                             children: "Doorstep Visa Service"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 739,
+                                                            lineNumber: 749,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1714,19 +1724,19 @@ function SpainVisaPage() {
                                                             children: "Complete document collection, dossier auditing, and stamped passport delivery at your home or office across the 7 Emirates."
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 742,
+                                                            lineNumber: 752,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 735,
+                                                    lineNumber: 745,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 727,
+                                            lineNumber: 737,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1740,7 +1750,7 @@ function SpainVisaPage() {
                                                         children: "Inquire Service"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 752,
+                                                        lineNumber: 762,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1748,24 +1758,24 @@ function SpainVisaPage() {
                                                         children: "→"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 753,
+                                                        lineNumber: 763,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 748,
+                                                lineNumber: 758,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 747,
+                                            lineNumber: 757,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 726,
+                                    lineNumber: 736,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1782,12 +1792,12 @@ function SpainVisaPage() {
                                                         className: "jsx-4c3226a5b4c3c4ec" + " " + "absolute inset-0 !w-full !h-full !object-cover !object-center transition-transform duration-500 group-hover:scale-105"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 762,
+                                                        lineNumber: 772,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 761,
+                                                    lineNumber: 771,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1798,7 +1808,7 @@ function SpainVisaPage() {
                                                             children: "GLOBAL FILING"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 769,
+                                                            lineNumber: 779,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1806,7 +1816,7 @@ function SpainVisaPage() {
                                                             children: "Worldwide Visa Assistance"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 772,
+                                                            lineNumber: 782,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1814,19 +1824,19 @@ function SpainVisaPage() {
                                                             children: "End-to-end guidance and filing for tourist, business, and student visas for Schengen, UK, USA, GCC, Asia, and Oceania."
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 775,
+                                                            lineNumber: 785,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 768,
+                                                    lineNumber: 778,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 760,
+                                            lineNumber: 770,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1840,7 +1850,7 @@ function SpainVisaPage() {
                                                         children: "Inquire Service"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 785,
+                                                        lineNumber: 795,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1848,24 +1858,24 @@ function SpainVisaPage() {
                                                         children: "→"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 786,
+                                                        lineNumber: 796,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 781,
+                                                lineNumber: 791,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 780,
+                                            lineNumber: 790,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 759,
+                                    lineNumber: 769,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1882,12 +1892,12 @@ function SpainVisaPage() {
                                                         className: "jsx-4c3226a5b4c3c4ec" + " " + "absolute inset-0 !w-full !h-full !object-cover !object-center transition-transform duration-500 group-hover:scale-105"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 795,
+                                                        lineNumber: 805,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 794,
+                                                    lineNumber: 804,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1898,7 +1908,7 @@ function SpainVisaPage() {
                                                             children: "PRIORITY TRACKING"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 802,
+                                                            lineNumber: 812,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1906,7 +1916,7 @@ function SpainVisaPage() {
                                                             children: "Express VFS Slot Booking"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 805,
+                                                            lineNumber: 815,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1914,19 +1924,19 @@ function SpainVisaPage() {
                                                             children: "24/7 express tracking of VFS and embassy systems to capture urgent or early biometric submission slots as soon as they open."
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 808,
+                                                            lineNumber: 818,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 801,
+                                                    lineNumber: 811,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 793,
+                                            lineNumber: 803,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1940,7 +1950,7 @@ function SpainVisaPage() {
                                                         children: "Inquire Service"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 818,
+                                                        lineNumber: 828,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1948,24 +1958,24 @@ function SpainVisaPage() {
                                                         children: "→"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 819,
+                                                        lineNumber: 829,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 814,
+                                                lineNumber: 824,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 813,
+                                            lineNumber: 823,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 792,
+                                    lineNumber: 802,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1982,12 +1992,12 @@ function SpainVisaPage() {
                                                         className: "jsx-4c3226a5b4c3c4ec" + " " + "absolute inset-0 !w-full !h-full !object-cover !object-center transition-transform duration-500 group-hover:scale-105"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 828,
+                                                        lineNumber: 838,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 827,
+                                                    lineNumber: 837,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1998,7 +2008,7 @@ function SpainVisaPage() {
                                                             children: "EMBASSY COMPLIANT"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 835,
+                                                            lineNumber: 845,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2006,7 +2016,7 @@ function SpainVisaPage() {
                                                             children: "Flight & Hotel Bookings"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 838,
+                                                            lineNumber: 848,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2014,19 +2024,19 @@ function SpainVisaPage() {
                                                             children: "Embassy-compliant live flight hold itineraries with active GDS PNR codes and confirmed hotel vouchers for visa submission."
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 841,
+                                                            lineNumber: 851,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 834,
+                                                    lineNumber: 844,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 826,
+                                            lineNumber: 836,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2040,7 +2050,7 @@ function SpainVisaPage() {
                                                         children: "Inquire Service"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 851,
+                                                        lineNumber: 861,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2048,24 +2058,24 @@ function SpainVisaPage() {
                                                         children: "→"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 852,
+                                                        lineNumber: 862,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 847,
+                                                lineNumber: 857,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 846,
+                                            lineNumber: 856,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 825,
+                                    lineNumber: 835,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2082,12 +2092,12 @@ function SpainVisaPage() {
                                                         className: "jsx-4c3226a5b4c3c4ec" + " " + "absolute inset-0 !w-full !h-full !object-cover !object-center transition-transform duration-500 group-hover:scale-105"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 861,
+                                                        lineNumber: 871,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 860,
+                                                    lineNumber: 870,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2098,7 +2108,7 @@ function SpainVisaPage() {
                                                             children: "PILGRIMAGE SUPPORT"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 868,
+                                                            lineNumber: 878,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2106,7 +2116,7 @@ function SpainVisaPage() {
                                                             children: "Hajj & Umrah Services"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 871,
+                                                            lineNumber: 881,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2114,19 +2124,19 @@ function SpainVisaPage() {
                                                             children: "Nusuk permit assistance, Umrah e-visas, Hajj registration for UAE expats, Holy City hotels, and transport coordination."
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 874,
+                                                            lineNumber: 884,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 867,
+                                                    lineNumber: 877,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 859,
+                                            lineNumber: 869,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2140,7 +2150,7 @@ function SpainVisaPage() {
                                                         children: "Inquire Service"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 884,
+                                                        lineNumber: 894,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2148,24 +2158,24 @@ function SpainVisaPage() {
                                                         children: "→"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 885,
+                                                        lineNumber: 895,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 880,
+                                                lineNumber: 890,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 879,
+                                            lineNumber: 889,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 858,
+                                    lineNumber: 868,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2182,12 +2192,12 @@ function SpainVisaPage() {
                                                         className: "jsx-4c3226a5b4c3c4ec" + " " + "absolute inset-0 !w-full !h-full !object-cover !object-center transition-transform duration-500 group-hover:scale-105"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 894,
+                                                        lineNumber: 904,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 893,
+                                                    lineNumber: 903,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2198,7 +2208,7 @@ function SpainVisaPage() {
                                                             children: "TAILOR-MADE VACATION"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 901,
+                                                            lineNumber: 911,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2206,7 +2216,7 @@ function SpainVisaPage() {
                                                             children: "Customized Holiday Packages"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 904,
+                                                            lineNumber: 914,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2214,19 +2224,19 @@ function SpainVisaPage() {
                                                             children: "Boutique international vacation packages including curated hotel stays, flight bookings, transfers, and private tours."
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 907,
+                                                            lineNumber: 917,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 900,
+                                                    lineNumber: 910,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 892,
+                                            lineNumber: 902,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2240,7 +2250,7 @@ function SpainVisaPage() {
                                                         children: "Inquire Service"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 917,
+                                                        lineNumber: 927,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2248,24 +2258,24 @@ function SpainVisaPage() {
                                                         children: "→"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 918,
+                                                        lineNumber: 928,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 913,
+                                                lineNumber: 923,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 912,
+                                            lineNumber: 922,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 891,
+                                    lineNumber: 901,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2282,12 +2292,12 @@ function SpainVisaPage() {
                                                         className: "jsx-4c3226a5b4c3c4ec" + " " + "absolute inset-0 !w-full !h-full !object-cover !object-center transition-transform duration-500 group-hover:scale-105"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 927,
+                                                        lineNumber: 937,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 926,
+                                                    lineNumber: 936,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2298,7 +2308,7 @@ function SpainVisaPage() {
                                                             children: "EMBASSY APPROVED"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 934,
+                                                            lineNumber: 944,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2306,7 +2316,7 @@ function SpainVisaPage() {
                                                             children: "Travel Medical Insurance"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 937,
+                                                            lineNumber: 947,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2314,19 +2324,19 @@ function SpainVisaPage() {
                                                             children: "Embassy-approved €30,000+ travel medical insurance policies tailored for Schengen and worldwide visa approvals."
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 940,
+                                                            lineNumber: 950,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 933,
+                                                    lineNumber: 943,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 925,
+                                            lineNumber: 935,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2340,7 +2350,7 @@ function SpainVisaPage() {
                                                         children: "Inquire Service"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 950,
+                                                        lineNumber: 960,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2348,24 +2358,24 @@ function SpainVisaPage() {
                                                         children: "→"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 951,
+                                                        lineNumber: 961,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 946,
+                                                lineNumber: 956,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 945,
+                                            lineNumber: 955,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 924,
+                                    lineNumber: 934,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2382,12 +2392,12 @@ function SpainVisaPage() {
                                                         className: "jsx-4c3226a5b4c3c4ec" + " " + "absolute inset-0 !w-full !h-full !object-cover !object-center transition-transform duration-500 group-hover:scale-105"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 960,
+                                                        lineNumber: 970,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 959,
+                                                    lineNumber: 969,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2398,7 +2408,7 @@ function SpainVisaPage() {
                                                             children: "EXPRESS ASSESSMENT"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 967,
+                                                            lineNumber: 977,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2406,7 +2416,7 @@ function SpainVisaPage() {
                                                             children: "Visa Eligibility"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 970,
+                                                            lineNumber: 980,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2414,19 +2424,19 @@ function SpainVisaPage() {
                                                             children: "Check your application readiness in 60s."
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 973,
+                                                            lineNumber: 983,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 966,
+                                                    lineNumber: 976,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 958,
+                                            lineNumber: 968,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2440,7 +2450,7 @@ function SpainVisaPage() {
                                                         children: "Check Eligibility"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 983,
+                                                        lineNumber: 993,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2448,41 +2458,41 @@ function SpainVisaPage() {
                                                         children: "→"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 984,
+                                                        lineNumber: 994,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 979,
+                                                lineNumber: 989,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 978,
+                                            lineNumber: 988,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 957,
+                                    lineNumber: 967,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                            lineNumber: 724,
+                            lineNumber: 734,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                    lineNumber: 711,
+                    lineNumber: 721,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                lineNumber: 710,
+                lineNumber: 720,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -2499,7 +2509,7 @@ function SpainVisaPage() {
                                     children: "CHECKLIST BY APPLICANT TYPE"
                                 }, void 0, false, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 996,
+                                    lineNumber: 1006,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -2507,7 +2517,7 @@ function SpainVisaPage() {
                                     children: "Required Documents for Spain Visa"
                                 }, void 0, false, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 999,
+                                    lineNumber: 1009,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2515,7 +2525,7 @@ function SpainVisaPage() {
                                     children: "Select your employment status to filter exact document requirements formatted for Consulate approval."
                                 }, void 0, false, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 1002,
+                                    lineNumber: 1012,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2550,7 +2560,7 @@ function SpainVisaPage() {
                                                     children: tab.icon
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1022,
+                                                    lineNumber: 1032,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2558,24 +2568,24 @@ function SpainVisaPage() {
                                                     children: tab.label
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1023,
+                                                    lineNumber: 1033,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, tab.id, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1014,
+                                            lineNumber: 1024,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 1007,
+                                    lineNumber: 1017,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                            lineNumber: 995,
+                            lineNumber: 1005,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2594,7 +2604,7 @@ function SpainVisaPage() {
                                                             children: "📘"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1036,
+                                                            lineNumber: 1046,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2602,7 +2612,7 @@ function SpainVisaPage() {
                                                             children: "1. Passport & Photos"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1039,
+                                                            lineNumber: 1049,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -2616,7 +2626,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1041,
+                                                                            lineNumber: 1051,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2624,13 +2634,13 @@ function SpainVisaPage() {
                                                                             children: "Passport with min. 6 months validity & 2 blank pages"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1041,
+                                                                            lineNumber: 1051,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1041,
+                                                                    lineNumber: 1051,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -2641,7 +2651,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1042,
+                                                                            lineNumber: 1052,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2649,13 +2659,13 @@ function SpainVisaPage() {
                                                                             children: "2 recent passport photographs (white background, Schengen spec)"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1042,
+                                                                            lineNumber: 1052,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1042,
+                                                                    lineNumber: 1052,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -2666,7 +2676,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1043,
+                                                                            lineNumber: 1053,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2674,25 +2684,25 @@ function SpainVisaPage() {
                                                                             children: "Copies of previous Schengen, US, or UK visas"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1043,
+                                                                            lineNumber: 1053,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1043,
+                                                                    lineNumber: 1053,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1040,
+                                                            lineNumber: 1050,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1035,
+                                                    lineNumber: 1045,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2700,13 +2710,13 @@ function SpainVisaPage() {
                                                     children: "Mandatory Standard"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1046,
+                                                    lineNumber: 1056,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1034,
+                                            lineNumber: 1044,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2720,7 +2730,7 @@ function SpainVisaPage() {
                                                             children: "🏢"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1051,
+                                                            lineNumber: 1061,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2728,7 +2738,7 @@ function SpainVisaPage() {
                                                             children: "2. Employer NOC Letter"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1054,
+                                                            lineNumber: 1064,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -2742,7 +2752,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1056,
+                                                                            lineNumber: 1066,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2750,13 +2760,13 @@ function SpainVisaPage() {
                                                                             children: "Valid UAE Residence Visa copy (min. 3 months validity)"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1056,
+                                                                            lineNumber: 1066,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1056,
+                                                                    lineNumber: 1066,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -2767,7 +2777,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1057,
+                                                                            lineNumber: 1067,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2775,13 +2785,13 @@ function SpainVisaPage() {
                                                                             children: "Original NOC letter stating position, salary, join date & approved leave"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1057,
+                                                                            lineNumber: 1067,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1057,
+                                                                    lineNumber: 1067,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -2792,7 +2802,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1058,
+                                                                            lineNumber: 1068,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2800,25 +2810,25 @@ function SpainVisaPage() {
                                                                             children: "Official company stamp & authorized signatory signature"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1058,
+                                                                            lineNumber: 1068,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1058,
+                                                                    lineNumber: 1068,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1055,
+                                                            lineNumber: 1065,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1050,
+                                                    lineNumber: 1060,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2826,13 +2836,13 @@ function SpainVisaPage() {
                                                     children: "Employment Proof"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1061,
+                                                    lineNumber: 1071,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1049,
+                                            lineNumber: 1059,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2846,7 +2856,7 @@ function SpainVisaPage() {
                                                             children: "💳"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1066,
+                                                            lineNumber: 1076,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2854,7 +2864,7 @@ function SpainVisaPage() {
                                                             children: "3. Personal Bank Statement"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1069,
+                                                            lineNumber: 1079,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -2868,7 +2878,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1071,
+                                                                            lineNumber: 1081,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2876,13 +2886,13 @@ function SpainVisaPage() {
                                                                             children: "6 months original UAE bank statement stamped by bank"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1071,
+                                                                            lineNumber: 1081,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1071,
+                                                                    lineNumber: 1081,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -2893,7 +2903,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1072,
+                                                                            lineNumber: 1082,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2901,13 +2911,13 @@ function SpainVisaPage() {
                                                                             children: "Regular monthly salary credit transactions"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1072,
+                                                                            lineNumber: 1082,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1072,
+                                                                    lineNumber: 1082,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -2918,7 +2928,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1073,
+                                                                            lineNumber: 1083,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2926,25 +2936,25 @@ function SpainVisaPage() {
                                                                             children: "Min. closing balance covering travel budget (~AED 15,000+)"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1073,
+                                                                            lineNumber: 1083,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1073,
+                                                                    lineNumber: 1083,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1070,
+                                                            lineNumber: 1080,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1065,
+                                                    lineNumber: 1075,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2952,13 +2962,13 @@ function SpainVisaPage() {
                                                     children: "Financial Proof"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1076,
+                                                    lineNumber: 1086,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1064,
+                                            lineNumber: 1074,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2972,7 +2982,7 @@ function SpainVisaPage() {
                                                             children: "✈️"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1081,
+                                                            lineNumber: 1091,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2980,7 +2990,7 @@ function SpainVisaPage() {
                                                             children: "4. Complete Travel File"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1084,
+                                                            lineNumber: 1094,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -2994,7 +3004,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1086,
+                                                                            lineNumber: 1096,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3002,13 +3012,13 @@ function SpainVisaPage() {
                                                                             children: "Confirmed roundtrip flight reservation (Provided by Eshaare)"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1086,
+                                                                            lineNumber: 1096,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1086,
+                                                                    lineNumber: 1096,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3019,7 +3029,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1087,
+                                                                            lineNumber: 1097,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3027,13 +3037,13 @@ function SpainVisaPage() {
                                                                             children: "Confirmed hotel voucher bookings for full stay duration"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1087,
+                                                                            lineNumber: 1097,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1087,
+                                                                    lineNumber: 1097,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3044,7 +3054,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1088,
+                                                                            lineNumber: 1098,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3052,25 +3062,25 @@ function SpainVisaPage() {
                                                                             children: "Schengen travel medical insurance (€30,000 policy included)"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1088,
+                                                                            lineNumber: 1098,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1088,
+                                                                    lineNumber: 1098,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1085,
+                                                            lineNumber: 1095,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1080,
+                                                    lineNumber: 1090,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3078,19 +3088,19 @@ function SpainVisaPage() {
                                                     children: "Included in Package"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1091,
+                                                    lineNumber: 1101,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1079,
+                                            lineNumber: 1089,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 1032,
+                                    lineNumber: 1042,
                                     columnNumber: 15
                                 }, this),
                                 activeDocTab === 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -3106,7 +3116,7 @@ function SpainVisaPage() {
                                                             children: "📘"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1101,
+                                                            lineNumber: 1111,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -3114,7 +3124,7 @@ function SpainVisaPage() {
                                                             children: "1. Passport & Emirates ID"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1102,
+                                                            lineNumber: 1112,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -3128,7 +3138,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1104,
+                                                                            lineNumber: 1114,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3136,13 +3146,13 @@ function SpainVisaPage() {
                                                                             children: "Original passport with min. 6 months validity"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1104,
+                                                                            lineNumber: 1114,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1104,
+                                                                    lineNumber: 1114,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3153,7 +3163,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1105,
+                                                                            lineNumber: 1115,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3161,13 +3171,13 @@ function SpainVisaPage() {
                                                                             children: "Valid UAE Residence Visa & Emirates ID copy"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1105,
+                                                                            lineNumber: 1115,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1105,
+                                                                    lineNumber: 1115,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3178,7 +3188,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1106,
+                                                                            lineNumber: 1116,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3186,25 +3196,25 @@ function SpainVisaPage() {
                                                                             children: "2 Schengen specification photos"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1106,
+                                                                            lineNumber: 1116,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1106,
+                                                                    lineNumber: 1116,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1103,
+                                                            lineNumber: 1113,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1100,
+                                                    lineNumber: 1110,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3212,13 +3222,13 @@ function SpainVisaPage() {
                                                     children: "Identity Standard"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1109,
+                                                    lineNumber: 1119,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1099,
+                                            lineNumber: 1109,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3232,7 +3242,7 @@ function SpainVisaPage() {
                                                             children: "📄"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1114,
+                                                            lineNumber: 1124,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -3240,7 +3250,7 @@ function SpainVisaPage() {
                                                             children: "2. Trade License & MOA"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1115,
+                                                            lineNumber: 1125,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -3254,7 +3264,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1117,
+                                                                            lineNumber: 1127,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3262,13 +3272,13 @@ function SpainVisaPage() {
                                                                             children: "Valid UAE Trade License copy showing applicant name"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1117,
+                                                                            lineNumber: 1127,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1117,
+                                                                    lineNumber: 1127,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3279,7 +3289,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1118,
+                                                                            lineNumber: 1128,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3287,13 +3297,13 @@ function SpainVisaPage() {
                                                                             children: "Memorandum of Association (MOA) / Share Certificate"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1118,
+                                                                            lineNumber: 1128,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1118,
+                                                                    lineNumber: 1128,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3304,7 +3314,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1119,
+                                                                            lineNumber: 1129,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3312,25 +3322,25 @@ function SpainVisaPage() {
                                                                             children: "Self-signed business introduction letter"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1119,
+                                                                            lineNumber: 1129,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1119,
+                                                                    lineNumber: 1129,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1116,
+                                                            lineNumber: 1126,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1113,
+                                                    lineNumber: 1123,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3338,13 +3348,13 @@ function SpainVisaPage() {
                                                     children: "Business Proof"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1122,
+                                                    lineNumber: 1132,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1112,
+                                            lineNumber: 1122,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3358,7 +3368,7 @@ function SpainVisaPage() {
                                                             children: "💳"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1127,
+                                                            lineNumber: 1137,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -3366,7 +3376,7 @@ function SpainVisaPage() {
                                                             children: "3. Company & Personal Bank"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1128,
+                                                            lineNumber: 1138,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -3380,7 +3390,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1130,
+                                                                            lineNumber: 1140,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3388,13 +3398,13 @@ function SpainVisaPage() {
                                                                             children: "6 months personal bank statement stamped by bank"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1130,
+                                                                            lineNumber: 1140,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1130,
+                                                                    lineNumber: 1140,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3405,7 +3415,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1131,
+                                                                            lineNumber: 1141,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3413,13 +3423,13 @@ function SpainVisaPage() {
                                                                             children: "6 months company corporate bank statement (Recommended)"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1131,
+                                                                            lineNumber: 1141,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1131,
+                                                                    lineNumber: 1141,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3430,7 +3440,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1132,
+                                                                            lineNumber: 1142,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3438,25 +3448,25 @@ function SpainVisaPage() {
                                                                             children: "Healthy cashflow & financial solvency proof"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1132,
+                                                                            lineNumber: 1142,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1132,
+                                                                    lineNumber: 1142,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1129,
+                                                            lineNumber: 1139,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1126,
+                                                    lineNumber: 1136,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3464,13 +3474,13 @@ function SpainVisaPage() {
                                                     children: "Financial Proof"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1135,
+                                                    lineNumber: 1145,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1125,
+                                            lineNumber: 1135,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3484,7 +3494,7 @@ function SpainVisaPage() {
                                                             children: "✈️"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1140,
+                                                            lineNumber: 1150,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -3492,7 +3502,7 @@ function SpainVisaPage() {
                                                             children: "4. Flight, Hotel & Insurance"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1141,
+                                                            lineNumber: 1151,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -3506,7 +3516,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1143,
+                                                                            lineNumber: 1153,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3514,13 +3524,13 @@ function SpainVisaPage() {
                                                                             children: "Confirmed roundtrip flight itinerary reservation"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1143,
+                                                                            lineNumber: 1153,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1143,
+                                                                    lineNumber: 1153,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3531,7 +3541,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1144,
+                                                                            lineNumber: 1154,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3539,13 +3549,13 @@ function SpainVisaPage() {
                                                                             children: "Confirmed hotel vouchers or business invitation letter"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1144,
+                                                                            lineNumber: 1154,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1144,
+                                                                    lineNumber: 1154,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3556,7 +3566,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1145,
+                                                                            lineNumber: 1155,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3564,25 +3574,25 @@ function SpainVisaPage() {
                                                                             children: "€30,000 Schengen insurance policy voucher"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1145,
+                                                                            lineNumber: 1155,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1145,
+                                                                    lineNumber: 1155,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1142,
+                                                            lineNumber: 1152,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1139,
+                                                    lineNumber: 1149,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3590,19 +3600,19 @@ function SpainVisaPage() {
                                                     children: "Included in Package"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1148,
+                                                    lineNumber: 1158,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1138,
+                                            lineNumber: 1148,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 1097,
+                                    lineNumber: 1107,
                                     columnNumber: 15
                                 }, this),
                                 activeDocTab === 2 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -3618,7 +3628,7 @@ function SpainVisaPage() {
                                                             children: "⭐"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1158,
+                                                            lineNumber: 1168,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -3626,7 +3636,7 @@ function SpainVisaPage() {
                                                             children: "1. Passport & Golden Visa"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1159,
+                                                            lineNumber: 1169,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -3640,7 +3650,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1161,
+                                                                            lineNumber: 1171,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3648,13 +3658,13 @@ function SpainVisaPage() {
                                                                             children: "Passport with min. 6 months validity & 2 blank pages"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1161,
+                                                                            lineNumber: 1171,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1161,
+                                                                    lineNumber: 1171,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3665,7 +3675,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1162,
+                                                                            lineNumber: 1172,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3673,13 +3683,13 @@ function SpainVisaPage() {
                                                                             children: "Valid 5/10-year UAE Golden Visa copy or Freelance permit"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1162,
+                                                                            lineNumber: 1172,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1162,
+                                                                    lineNumber: 1172,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3690,7 +3700,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1163,
+                                                                            lineNumber: 1173,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3698,25 +3708,25 @@ function SpainVisaPage() {
                                                                             children: "2 recent passport photographs (Schengen spec)"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1163,
+                                                                            lineNumber: 1173,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1163,
+                                                                    lineNumber: 1173,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1160,
+                                                            lineNumber: 1170,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1157,
+                                                    lineNumber: 1167,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3724,13 +3734,13 @@ function SpainVisaPage() {
                                                     children: "Residency Privilege"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1166,
+                                                    lineNumber: 1176,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1156,
+                                            lineNumber: 1166,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3744,7 +3754,7 @@ function SpainVisaPage() {
                                                             children: "📝"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1171,
+                                                            lineNumber: 1181,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -3752,7 +3762,7 @@ function SpainVisaPage() {
                                                             children: "2. Declaration Cover Letter"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1172,
+                                                            lineNumber: 1182,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -3766,7 +3776,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1174,
+                                                                            lineNumber: 1184,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3774,13 +3784,13 @@ function SpainVisaPage() {
                                                                             children: "Self-declaration letter detailing trip purpose & dates"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1174,
+                                                                            lineNumber: 1184,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1174,
+                                                                    lineNumber: 1184,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3791,7 +3801,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1175,
+                                                                            lineNumber: 1185,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3799,13 +3809,13 @@ function SpainVisaPage() {
                                                                             children: "Freelance work contract / client proof (if applicable)"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1175,
+                                                                            lineNumber: 1185,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1175,
+                                                                    lineNumber: 1185,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3816,7 +3826,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1176,
+                                                                            lineNumber: 1186,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3824,25 +3834,25 @@ function SpainVisaPage() {
                                                                             children: "Previous Schengen visa travel history copies"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1176,
+                                                                            lineNumber: 1186,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1176,
+                                                                    lineNumber: 1186,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1173,
+                                                            lineNumber: 1183,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1170,
+                                                    lineNumber: 1180,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3850,13 +3860,13 @@ function SpainVisaPage() {
                                                     children: "Cover Letter"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1179,
+                                                    lineNumber: 1189,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1169,
+                                            lineNumber: 1179,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3870,7 +3880,7 @@ function SpainVisaPage() {
                                                             children: "💳"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1184,
+                                                            lineNumber: 1194,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -3878,7 +3888,7 @@ function SpainVisaPage() {
                                                             children: "3. Personal Bank Statement"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1185,
+                                                            lineNumber: 1195,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -3892,7 +3902,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1187,
+                                                                            lineNumber: 1197,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3900,13 +3910,13 @@ function SpainVisaPage() {
                                                                             children: "3 to 6 months stamped UAE personal bank statement"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1187,
+                                                                            lineNumber: 1197,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1187,
+                                                                    lineNumber: 1197,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3917,7 +3927,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1188,
+                                                                            lineNumber: 1198,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3925,13 +3935,13 @@ function SpainVisaPage() {
                                                                             children: "Healthy ending balance demonstrating financial means"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1188,
+                                                                            lineNumber: 1198,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1188,
+                                                                    lineNumber: 1198,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3942,7 +3952,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1189,
+                                                                            lineNumber: 1199,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3950,25 +3960,25 @@ function SpainVisaPage() {
                                                                             children: "Proof of property investment or assets (Optional booster)"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1189,
+                                                                            lineNumber: 1199,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1189,
+                                                                    lineNumber: 1199,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1186,
+                                                            lineNumber: 1196,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1183,
+                                                    lineNumber: 1193,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3976,13 +3986,13 @@ function SpainVisaPage() {
                                                     children: "Financial Proof"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1192,
+                                                    lineNumber: 1202,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1182,
+                                            lineNumber: 1192,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3996,7 +4006,7 @@ function SpainVisaPage() {
                                                             children: "✈️"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1197,
+                                                            lineNumber: 1207,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -4004,7 +4014,7 @@ function SpainVisaPage() {
                                                             children: "4. Itinerary & Insurance"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1198,
+                                                            lineNumber: 1208,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -4018,7 +4028,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1200,
+                                                                            lineNumber: 1210,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4026,13 +4036,13 @@ function SpainVisaPage() {
                                                                             children: "Confirmed roundtrip flight reservation voucher"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1200,
+                                                                            lineNumber: 1210,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1200,
+                                                                    lineNumber: 1210,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -4043,7 +4053,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1201,
+                                                                            lineNumber: 1211,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4051,13 +4061,13 @@ function SpainVisaPage() {
                                                                             children: "Hotel accommodation reservations (Provided)"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1201,
+                                                                            lineNumber: 1211,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1201,
+                                                                    lineNumber: 1211,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -4068,7 +4078,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1202,
+                                                                            lineNumber: 1212,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4076,25 +4086,25 @@ function SpainVisaPage() {
                                                                             children: "Compliant €30,000 Schengen travel insurance"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1202,
+                                                                            lineNumber: 1212,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1202,
+                                                                    lineNumber: 1212,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1199,
+                                                            lineNumber: 1209,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1196,
+                                                    lineNumber: 1206,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4102,19 +4112,19 @@ function SpainVisaPage() {
                                                     children: "Included in Package"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1205,
+                                                    lineNumber: 1215,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1195,
+                                            lineNumber: 1205,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 1154,
+                                    lineNumber: 1164,
                                     columnNumber: 15
                                 }, this),
                                 activeDocTab === 3 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -4130,7 +4140,7 @@ function SpainVisaPage() {
                                                             children: "📘"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1215,
+                                                            lineNumber: 1225,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -4138,7 +4148,7 @@ function SpainVisaPage() {
                                                             children: "1. Passport & Dependent Visa"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1216,
+                                                            lineNumber: 1226,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -4152,7 +4162,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1218,
+                                                                            lineNumber: 1228,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4160,13 +4170,13 @@ function SpainVisaPage() {
                                                                             children: "Original passport with min. 6 months validity"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1218,
+                                                                            lineNumber: 1228,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1218,
+                                                                    lineNumber: 1228,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -4177,7 +4187,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1219,
+                                                                            lineNumber: 1229,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4185,13 +4195,13 @@ function SpainVisaPage() {
                                                                             children: "Valid UAE Dependent Residence Visa copy"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1219,
+                                                                            lineNumber: 1229,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1219,
+                                                                    lineNumber: 1229,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -4202,7 +4212,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1220,
+                                                                            lineNumber: 1230,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4210,25 +4220,25 @@ function SpainVisaPage() {
                                                                             children: "2 Schengen specification photographs"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1220,
+                                                                            lineNumber: 1230,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1220,
+                                                                    lineNumber: 1230,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1217,
+                                                            lineNumber: 1227,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1214,
+                                                    lineNumber: 1224,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4236,13 +4246,13 @@ function SpainVisaPage() {
                                                     children: "Identity Proof"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1223,
+                                                    lineNumber: 1233,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1213,
+                                            lineNumber: 1223,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4256,7 +4266,7 @@ function SpainVisaPage() {
                                                             children: "🎓"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1228,
+                                                            lineNumber: 1238,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -4264,7 +4274,7 @@ function SpainVisaPage() {
                                                             children: "2. Sponsor Documents & NOC"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1229,
+                                                            lineNumber: 1239,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -4278,7 +4288,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1231,
+                                                                            lineNumber: 1241,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4286,13 +4296,13 @@ function SpainVisaPage() {
                                                                             children: "Sponsor passport & valid UAE visa copy"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1231,
+                                                                            lineNumber: 1241,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1231,
+                                                                    lineNumber: 1241,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -4303,7 +4313,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1232,
+                                                                            lineNumber: 1242,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4311,13 +4321,13 @@ function SpainVisaPage() {
                                                                             children: "Sponsor NOC & Financial Guarantee letter"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1232,
+                                                                            lineNumber: 1242,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1232,
+                                                                    lineNumber: 1242,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -4328,7 +4338,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1233,
+                                                                            lineNumber: 1243,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4336,25 +4346,25 @@ function SpainVisaPage() {
                                                                             children: "University/School NOC letter (for students)"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1233,
+                                                                            lineNumber: 1243,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1233,
+                                                                    lineNumber: 1243,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1230,
+                                                            lineNumber: 1240,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1227,
+                                                    lineNumber: 1237,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4362,13 +4372,13 @@ function SpainVisaPage() {
                                                     children: "Sponsorship Proof"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1236,
+                                                    lineNumber: 1246,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1226,
+                                            lineNumber: 1236,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4382,7 +4392,7 @@ function SpainVisaPage() {
                                                             children: "💳"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1241,
+                                                            lineNumber: 1251,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -4390,7 +4400,7 @@ function SpainVisaPage() {
                                                             children: "3. Sponsor Bank Statement"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1242,
+                                                            lineNumber: 1252,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -4404,7 +4414,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1244,
+                                                                            lineNumber: 1254,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4412,13 +4422,13 @@ function SpainVisaPage() {
                                                                             children: "6 months original UAE bank statement of the sponsor"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1244,
+                                                                            lineNumber: 1254,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1244,
+                                                                    lineNumber: 1254,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -4429,7 +4439,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1245,
+                                                                            lineNumber: 1255,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4437,13 +4447,13 @@ function SpainVisaPage() {
                                                                             children: "Proof of sufficient balance for all traveling family members"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1245,
+                                                                            lineNumber: 1255,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1245,
+                                                                    lineNumber: 1255,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -4454,7 +4464,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1246,
+                                                                            lineNumber: 1256,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4462,25 +4472,25 @@ function SpainVisaPage() {
                                                                             children: "Attested birth/marriage certificates (if required)"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1246,
+                                                                            lineNumber: 1256,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1246,
+                                                                    lineNumber: 1256,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1243,
+                                                            lineNumber: 1253,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1240,
+                                                    lineNumber: 1250,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4488,13 +4498,13 @@ function SpainVisaPage() {
                                                     children: "Financial Guarantee"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1249,
+                                                    lineNumber: 1259,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1239,
+                                            lineNumber: 1249,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4508,7 +4518,7 @@ function SpainVisaPage() {
                                                             children: "✈️"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1254,
+                                                            lineNumber: 1264,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -4516,7 +4526,7 @@ function SpainVisaPage() {
                                                             children: "4. Complete Travel File"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1255,
+                                                            lineNumber: 1265,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -4530,7 +4540,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1257,
+                                                                            lineNumber: 1267,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4538,13 +4548,13 @@ function SpainVisaPage() {
                                                                             children: "Confirmed flight reservation covering all travelers"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1257,
+                                                                            lineNumber: 1267,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1257,
+                                                                    lineNumber: 1267,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -4555,7 +4565,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1258,
+                                                                            lineNumber: 1268,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4563,13 +4573,13 @@ function SpainVisaPage() {
                                                                             children: "Family hotel bookings covering full stay duration"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1258,
+                                                                            lineNumber: 1268,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1258,
+                                                                    lineNumber: 1268,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -4580,7 +4590,7 @@ function SpainVisaPage() {
                                                                             children: "•"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1259,
+                                                                            lineNumber: 1269,
                                                                             columnNumber: 62
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4588,25 +4598,25 @@ function SpainVisaPage() {
                                                                             children: "Schengen travel medical insurance policy"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                            lineNumber: 1259,
+                                                                            lineNumber: 1269,
                                                                             columnNumber: 129
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1259,
+                                                                    lineNumber: 1269,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1256,
+                                                            lineNumber: 1266,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1253,
+                                                    lineNumber: 1263,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4614,36 +4624,36 @@ function SpainVisaPage() {
                                                     children: "Included in Package"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1262,
+                                                    lineNumber: 1272,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1252,
+                                            lineNumber: 1262,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 1211,
+                                    lineNumber: 1221,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                            lineNumber: 1030,
+                            lineNumber: 1040,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                    lineNumber: 994,
+                    lineNumber: 1004,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                lineNumber: 993,
+                lineNumber: 1003,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -4660,7 +4670,7 @@ function SpainVisaPage() {
                                     children: "SIMPLE 5-STEP JOURNEY"
                                 }, void 0, false, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 1274,
+                                    lineNumber: 1284,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -4668,7 +4678,7 @@ function SpainVisaPage() {
                                     children: "How We Get Your Spain Visa Approved"
                                 }, void 0, false, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 1277,
+                                    lineNumber: 1287,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4676,13 +4686,13 @@ function SpainVisaPage() {
                                     children: "Our structured process ensures accuracy, speed, and complete peace of mind."
                                 }, void 0, false, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 1280,
+                                    lineNumber: 1290,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                            lineNumber: 1273,
+                            lineNumber: 1283,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4692,7 +4702,7 @@ function SpainVisaPage() {
                                     className: "jsx-4c3226a5b4c3c4ec" + " " + "absolute top-1/2 left-10 right-10 h-0.5 bg-emerald-800 -translate-y-6 z-0"
                                 }, void 0, false, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 1288,
+                                    lineNumber: 1298,
                                     columnNumber: 13
                                 }, this),
                                 [
@@ -4731,7 +4741,7 @@ function SpainVisaPage() {
                                                     children: st.step
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1319,
+                                                    lineNumber: 1329,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -4739,7 +4749,7 @@ function SpainVisaPage() {
                                                     children: st.title
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1322,
+                                                    lineNumber: 1332,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4747,24 +4757,24 @@ function SpainVisaPage() {
                                                     children: st.desc
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1323,
+                                                    lineNumber: 1333,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1318,
+                                            lineNumber: 1328,
                                             columnNumber: 17
                                         }, this)
                                     }, i, false, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 1317,
+                                        lineNumber: 1327,
                                         columnNumber: 15
                                     }, this))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                            lineNumber: 1286,
+                            lineNumber: 1296,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4803,7 +4813,7 @@ function SpainVisaPage() {
                                             children: st.step
                                         }, void 0, false, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1359,
+                                            lineNumber: 1369,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4814,7 +4824,7 @@ function SpainVisaPage() {
                                                     children: st.title
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1363,
+                                                    lineNumber: 1373,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4822,35 +4832,35 @@ function SpainVisaPage() {
                                                     children: st.desc
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1364,
+                                                    lineNumber: 1374,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1362,
+                                            lineNumber: 1372,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, i, true, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 1358,
+                                    lineNumber: 1368,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                            lineNumber: 1330,
+                            lineNumber: 1340,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                    lineNumber: 1272,
+                    lineNumber: 1282,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                lineNumber: 1271,
+                lineNumber: 1281,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -4871,7 +4881,7 @@ function SpainVisaPage() {
                                                 children: "OPERATIONAL EXCELLENCE"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 1379,
+                                                lineNumber: 1389,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -4879,7 +4889,7 @@ function SpainVisaPage() {
                                                 children: "Why UAE Residents Choose Eshaare Tours"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 1382,
+                                                lineNumber: 1392,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4887,13 +4897,13 @@ function SpainVisaPage() {
                                                 children: "Navigating visa applications demands speed, accuracy, and absolute transparency. Eshaare Tours combines deep regulatory knowledge with physical doorstep services to deliver a frictionless experience."
                                             }, void 0, false, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 1385,
+                                                lineNumber: 1395,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 1378,
+                                        lineNumber: 1388,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4907,7 +4917,7 @@ function SpainVisaPage() {
                                                         children: "1"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 1394,
+                                                        lineNumber: 1404,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4918,7 +4928,7 @@ function SpainVisaPage() {
                                                                 children: "Dossier Audit & Consultation"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                lineNumber: 1398,
+                                                                lineNumber: 1408,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4926,19 +4936,19 @@ function SpainVisaPage() {
                                                                 children: "Our specialists thoroughly audit your documents against embassy checklists to prevent rejection risks."
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                lineNumber: 1401,
+                                                                lineNumber: 1411,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 1397,
+                                                        lineNumber: 1407,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 1393,
+                                                lineNumber: 1403,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4949,7 +4959,7 @@ function SpainVisaPage() {
                                                         children: "2"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 1409,
+                                                        lineNumber: 1419,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4960,7 +4970,7 @@ function SpainVisaPage() {
                                                                 children: "Urgent Appointment Slot Tracking"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                lineNumber: 1413,
+                                                                lineNumber: 1423,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4968,19 +4978,19 @@ function SpainVisaPage() {
                                                                 children: "24/7 express tracking captures early VFS and embassy submission slots as soon as they open."
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                lineNumber: 1416,
+                                                                lineNumber: 1426,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 1412,
+                                                        lineNumber: 1422,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 1408,
+                                                lineNumber: 1418,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4991,7 +5001,7 @@ function SpainVisaPage() {
                                                         children: "3"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 1424,
+                                                        lineNumber: 1434,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5002,7 +5012,7 @@ function SpainVisaPage() {
                                                                 children: "Active GDS Flight & Hotel Holds"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                lineNumber: 1428,
+                                                                lineNumber: 1438,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5010,19 +5020,19 @@ function SpainVisaPage() {
                                                                 children: "Receive verifiable flight hold itineraries with live PNR codes that satisfy strict embassy verification requirements."
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                lineNumber: 1431,
+                                                                lineNumber: 1441,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 1427,
+                                                        lineNumber: 1437,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 1423,
+                                                lineNumber: 1433,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5033,7 +5043,7 @@ function SpainVisaPage() {
                                                         children: "4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 1439,
+                                                        lineNumber: 1449,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5044,7 +5054,7 @@ function SpainVisaPage() {
                                                                 children: "Doorstep Courier Across 7 Emirates"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                lineNumber: 1443,
+                                                                lineNumber: 1453,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5052,31 +5062,31 @@ function SpainVisaPage() {
                                                                 children: "Enjoy hassle-free home/office document pickup and stamped passport delivery anywhere in the UAE."
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                lineNumber: 1446,
+                                                                lineNumber: 1456,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 1442,
+                                                        lineNumber: 1452,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 1438,
+                                                lineNumber: 1448,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 1391,
+                                        lineNumber: 1401,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                lineNumber: 1377,
+                                lineNumber: 1387,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5090,12 +5100,12 @@ function SpainVisaPage() {
                                             className: "jsx-4c3226a5b4c3c4ec" + " " + "absolute inset-0 !w-full !h-full !object-cover !object-center transition-transform duration-500 group-hover:scale-105"
                                         }, void 0, false, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1458,
+                                            lineNumber: 1468,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 1457,
+                                        lineNumber: 1467,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5109,12 +5119,12 @@ function SpainVisaPage() {
                                                     className: "jsx-4c3226a5b4c3c4ec" + " " + "absolute inset-0 !w-full !h-full !object-cover !object-center"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1468,
+                                                    lineNumber: 1478,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 1467,
+                                                lineNumber: 1477,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5125,7 +5135,7 @@ function SpainVisaPage() {
                                                         children: "DEDICATED SPECIALIST SUPPORT"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 1475,
+                                                        lineNumber: 1485,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -5133,7 +5143,7 @@ function SpainVisaPage() {
                                                         children: "Licensed Dubai Consultancy"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 1478,
+                                                        lineNumber: 1488,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5141,41 +5151,41 @@ function SpainVisaPage() {
                                                         children: "Our travel advisors provide personalized, step-by-step guidance to ensure every application file is complete and embassy-compliant."
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 1481,
+                                                        lineNumber: 1491,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 1474,
+                                                lineNumber: 1484,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 1466,
+                                        lineNumber: 1476,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                lineNumber: 1455,
+                                lineNumber: 1465,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                        lineNumber: 1375,
+                        lineNumber: 1385,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                    lineNumber: 1374,
+                    lineNumber: 1384,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                lineNumber: 1373,
+                lineNumber: 1383,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -5187,7 +5197,7 @@ function SpainVisaPage() {
                         className: "jsx-4c3226a5b4c3c4ec"
                     }, void 0, false, {
                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                        lineNumber: 1493,
+                        lineNumber: 1503,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5203,7 +5213,7 @@ function SpainVisaPage() {
                                             children: "START YOUR APPLICATION TODAY"
                                         }, void 0, false, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1497,
+                                            lineNumber: 1507,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -5211,7 +5221,7 @@ function SpainVisaPage() {
                                             children: "Ready to start your Spain journey?"
                                         }, void 0, false, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1500,
+                                            lineNumber: 1510,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5219,13 +5229,13 @@ function SpainVisaPage() {
                                             children: "Fill out the quick inquiry form below or chat directly with our Spain visa specialists."
                                         }, void 0, false, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1503,
+                                            lineNumber: 1513,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 1496,
+                                    lineNumber: 1506,
                                     columnNumber: 13
                                 }, this),
                                 bottomFormSubmitted ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5236,7 +5246,7 @@ function SpainVisaPage() {
                                             children: "✓"
                                         }, void 0, false, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1511,
+                                            lineNumber: 1521,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -5244,7 +5254,7 @@ function SpainVisaPage() {
                                             children: "Consultation Request Received!"
                                         }, void 0, false, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1514,
+                                            lineNumber: 1524,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5252,7 +5262,7 @@ function SpainVisaPage() {
                                             children: "Thank you! Our Spain visa specialist will review your details and call you shortly to assist with your application."
                                         }, void 0, false, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1517,
+                                            lineNumber: 1527,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -5261,13 +5271,13 @@ function SpainVisaPage() {
                                             children: "Submit another inquiry"
                                         }, void 0, false, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1520,
+                                            lineNumber: 1530,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 1510,
+                                    lineNumber: 1520,
                                     columnNumber: 15
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                                     onSubmit: handleBottomSubmit,
@@ -5278,7 +5288,7 @@ function SpainVisaPage() {
                                             children: bottomError
                                         }, void 0, false, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1530,
+                                            lineNumber: 1540,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5289,7 +5299,7 @@ function SpainVisaPage() {
                                                     children: "Full Name *"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1536,
+                                                    lineNumber: 1546,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -5304,13 +5314,13 @@ function SpainVisaPage() {
                                                     className: "jsx-4c3226a5b4c3c4ec" + " " + "w-full bg-[#081812] border border-emerald-800 rounded-xl px-4 py-3 text-sm text-white placeholder-emerald-700 focus:outline-none focus:border-emerald-400"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1537,
+                                                    lineNumber: 1547,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1535,
+                                            lineNumber: 1545,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5321,7 +5331,7 @@ function SpainVisaPage() {
                                                     children: "Phone / WhatsApp Number *"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1548,
+                                                    lineNumber: 1558,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -5336,13 +5346,13 @@ function SpainVisaPage() {
                                                     className: "jsx-4c3226a5b4c3c4ec" + " " + "w-full bg-[#081812] border border-emerald-800 rounded-xl px-4 py-3 text-sm text-white placeholder-emerald-700 focus:outline-none focus:border-emerald-400"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1549,
+                                                    lineNumber: 1559,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1547,
+                                            lineNumber: 1557,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5353,7 +5363,7 @@ function SpainVisaPage() {
                                                     children: "Email Address"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1560,
+                                                    lineNumber: 1570,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -5367,13 +5377,13 @@ function SpainVisaPage() {
                                                     className: "jsx-4c3226a5b4c3c4ec" + " " + "w-full bg-[#081812] border border-emerald-800 rounded-xl px-4 py-3 text-sm text-white placeholder-emerald-700 focus:outline-none focus:border-emerald-400"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1561,
+                                                    lineNumber: 1571,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1559,
+                                            lineNumber: 1569,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5384,7 +5394,7 @@ function SpainVisaPage() {
                                                     children: "UAE Residence Location *"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1571,
+                                                    lineNumber: 1581,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -5401,7 +5411,7 @@ function SpainVisaPage() {
                                                             children: "Dubai"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1577,
+                                                            lineNumber: 1587,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -5410,7 +5420,7 @@ function SpainVisaPage() {
                                                             children: "Abu Dhabi"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1578,
+                                                            lineNumber: 1588,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -5419,7 +5429,7 @@ function SpainVisaPage() {
                                                             children: "Sharjah"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1579,
+                                                            lineNumber: 1589,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -5428,19 +5438,19 @@ function SpainVisaPage() {
                                                             children: "Ajman / RAK / UAQ / Fujairah"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1580,
+                                                            lineNumber: 1590,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1572,
+                                                    lineNumber: 1582,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1570,
+                                            lineNumber: 1580,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5454,7 +5464,7 @@ function SpainVisaPage() {
                                                     children: "Submitting Lead..."
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1591,
+                                                    lineNumber: 1601,
                                                     columnNumber: 23
                                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                                                     children: [
@@ -5463,7 +5473,7 @@ function SpainVisaPage() {
                                                             children: "Apply for Spain Visa Now"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1594,
+                                                            lineNumber: 1604,
                                                             columnNumber: 25
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -5479,34 +5489,34 @@ function SpainVisaPage() {
                                                                 className: "jsx-4c3226a5b4c3c4ec"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                lineNumber: 1596,
+                                                                lineNumber: 1606,
                                                                 columnNumber: 27
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1595,
+                                                            lineNumber: 1605,
                                                             columnNumber: 25
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1593,
+                                                    lineNumber: 1603,
                                                     columnNumber: 23
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 1585,
+                                                lineNumber: 1595,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1584,
+                                            lineNumber: 1594,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 1528,
+                                    lineNumber: 1538,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5517,7 +5527,7 @@ function SpainVisaPage() {
                                             children: "Or reach us instantly:"
                                         }, void 0, false, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1606,
+                                            lineNumber: 1616,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5533,12 +5543,12 @@ function SpainVisaPage() {
                                                         children: "💬 WhatsApp: +971 55 733 8429"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 1614,
+                                                        lineNumber: 1624,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1608,
+                                                    lineNumber: 1618,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -5549,41 +5559,41 @@ function SpainVisaPage() {
                                                         children: "📞 Call Us: +971 55 733 8429"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 1620,
+                                                        lineNumber: 1630,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1616,
+                                                    lineNumber: 1626,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1607,
+                                            lineNumber: 1617,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 1605,
+                                    lineNumber: 1615,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                            lineNumber: 1495,
+                            lineNumber: 1505,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                        lineNumber: 1494,
+                        lineNumber: 1504,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                lineNumber: 1492,
+                lineNumber: 1502,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -5600,7 +5610,7 @@ function SpainVisaPage() {
                                     children: "GLOBAL DESTINATIONS"
                                 }, void 0, false, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 1632,
+                                    lineNumber: 1642,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -5608,7 +5618,7 @@ function SpainVisaPage() {
                                     children: "Popular Global Destinations Covered"
                                 }, void 0, false, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 1635,
+                                    lineNumber: 1645,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5616,13 +5626,13 @@ function SpainVisaPage() {
                                     children: "Seamless visa processing and curated itineraries for iconic international destinations."
                                 }, void 0, false, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 1638,
+                                    lineNumber: 1648,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                            lineNumber: 1631,
+                            lineNumber: 1641,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5640,7 +5650,7 @@ function SpainVisaPage() {
                                                     className: "jsx-4c3226a5b4c3c4ec" + " " + "absolute inset-0 !w-full !h-full !object-cover !object-center transition-transform duration-500 group-hover:scale-105"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1649,
+                                                    lineNumber: 1659,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5651,7 +5661,7 @@ function SpainVisaPage() {
                                                             children: "Kenya & East Africa"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1655,
+                                                            lineNumber: 1665,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5659,19 +5669,19 @@ function SpainVisaPage() {
                                                             children: "Wildlife Safaris & Adventure"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1656,
+                                                            lineNumber: 1666,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1654,
+                                                    lineNumber: 1664,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1648,
+                                            lineNumber: 1658,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5686,7 +5696,7 @@ function SpainVisaPage() {
                                                             className: "jsx-4c3226a5b4c3c4ec" + " " + "absolute inset-0 !w-full !h-full !object-cover !object-center transition-transform duration-500 group-hover:scale-105"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1663,
+                                                            lineNumber: 1673,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5697,7 +5707,7 @@ function SpainVisaPage() {
                                                                     children: "Switzerland"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1669,
+                                                                    lineNumber: 1679,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5705,19 +5715,19 @@ function SpainVisaPage() {
                                                                     children: "Alpine Escape"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1670,
+                                                                    lineNumber: 1680,
                                                                     columnNumber: 21
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1668,
+                                                            lineNumber: 1678,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1662,
+                                                    lineNumber: 1672,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5729,7 +5739,7 @@ function SpainVisaPage() {
                                                             className: "jsx-4c3226a5b4c3c4ec" + " " + "absolute inset-0 !w-full !h-full !object-cover !object-center transition-transform duration-500 group-hover:scale-105"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1674,
+                                                            lineNumber: 1684,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5740,7 +5750,7 @@ function SpainVisaPage() {
                                                                     children: "Japan"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1680,
+                                                                    lineNumber: 1690,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5748,31 +5758,31 @@ function SpainVisaPage() {
                                                                     children: "Kyoto Heritage"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                                    lineNumber: 1681,
+                                                                    lineNumber: 1691,
                                                                     columnNumber: 21
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1679,
+                                                            lineNumber: 1689,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1673,
+                                                    lineNumber: 1683,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1661,
+                                            lineNumber: 1671,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 1646,
+                                    lineNumber: 1656,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5786,7 +5796,7 @@ function SpainVisaPage() {
                                                 className: "jsx-4c3226a5b4c3c4ec" + " " + "absolute inset-0 !w-full !h-full !object-cover !object-center transition-transform duration-500 group-hover:scale-105"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 1690,
+                                                lineNumber: 1700,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5797,7 +5807,7 @@ function SpainVisaPage() {
                                                         children: "Norway Fjords"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 1696,
+                                                        lineNumber: 1706,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5805,24 +5815,24 @@ function SpainVisaPage() {
                                                         children: "Canyons & Northern Lights"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                        lineNumber: 1697,
+                                                        lineNumber: 1707,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                lineNumber: 1695,
+                                                lineNumber: 1705,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 1689,
+                                        lineNumber: 1699,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 1688,
+                                    lineNumber: 1698,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5837,7 +5847,7 @@ function SpainVisaPage() {
                                                     className: "jsx-4c3226a5b4c3c4ec" + " " + "absolute inset-0 !w-full !h-full !object-cover !object-center transition-transform duration-500 group-hover:scale-105"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1706,
+                                                    lineNumber: 1716,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5848,7 +5858,7 @@ function SpainVisaPage() {
                                                             children: "Austria & Alps"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1712,
+                                                            lineNumber: 1722,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5856,19 +5866,19 @@ function SpainVisaPage() {
                                                             children: "Snow Treks & Resorts"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1713,
+                                                            lineNumber: 1723,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1711,
+                                                    lineNumber: 1721,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1705,
+                                            lineNumber: 1715,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5880,7 +5890,7 @@ function SpainVisaPage() {
                                                     className: "jsx-4c3226a5b4c3c4ec" + " " + "absolute inset-0 !w-full !h-full !object-cover !object-center transition-transform duration-500 group-hover:scale-105"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1719,
+                                                    lineNumber: 1729,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5891,7 +5901,7 @@ function SpainVisaPage() {
                                                             children: "France & Paris"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1725,
+                                                            lineNumber: 1735,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5899,42 +5909,42 @@ function SpainVisaPage() {
                                                             children: "Lakes & Gardens"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                            lineNumber: 1726,
+                                                            lineNumber: 1736,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1724,
+                                                    lineNumber: 1734,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1718,
+                                            lineNumber: 1728,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 1703,
+                                    lineNumber: 1713,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                            lineNumber: 1644,
+                            lineNumber: 1654,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                    lineNumber: 1630,
+                    lineNumber: 1640,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                lineNumber: 1629,
+                lineNumber: 1639,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -5951,7 +5961,7 @@ function SpainVisaPage() {
                                     children: "FREQUENTLY ASKED QUESTIONS"
                                 }, void 0, false, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 1738,
+                                    lineNumber: 1748,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -5959,7 +5969,7 @@ function SpainVisaPage() {
                                     children: "Spain Visa FAQs for UAE Residents"
                                 }, void 0, false, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 1741,
+                                    lineNumber: 1751,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5967,13 +5977,13 @@ function SpainVisaPage() {
                                     children: "Everything you need to know before applying for your Spain Schengen visa."
                                 }, void 0, false, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 1744,
+                                    lineNumber: 1754,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                            lineNumber: 1737,
+                            lineNumber: 1747,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5990,7 +6000,7 @@ function SpainVisaPage() {
                                                     children: faq.q
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1759,
+                                                    lineNumber: 1769,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5998,13 +6008,13 @@ function SpainVisaPage() {
                                                     children: openFaq === idx ? "−" : "+"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                                    lineNumber: 1762,
+                                                    lineNumber: 1772,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1755,
+                                            lineNumber: 1765,
                                             columnNumber: 17
                                         }, this),
                                         openFaq === idx && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6012,29 +6022,29 @@ function SpainVisaPage() {
                                             children: faq.a
                                         }, void 0, false, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1772,
+                                            lineNumber: 1782,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, idx, true, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 1751,
+                                    lineNumber: 1761,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                            lineNumber: 1749,
+                            lineNumber: 1759,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                    lineNumber: 1736,
+                    lineNumber: 1746,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                lineNumber: 1735,
+                lineNumber: 1745,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -6051,20 +6061,20 @@ function SpainVisaPage() {
                                 sizes: "100vw"
                             }, void 0, false, {
                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                lineNumber: 1785,
+                                lineNumber: 1795,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "jsx-4c3226a5b4c3c4ec" + " " + "absolute inset-0 bg-gradient-to-t from-[#0c1f17] via-[#0c1f17]/70 to-transparent"
                             }, void 0, false, {
                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                lineNumber: 1792,
+                                lineNumber: 1802,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                        lineNumber: 1784,
+                        lineNumber: 1794,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6075,7 +6085,7 @@ function SpainVisaPage() {
                                 children: "START YOUR SCHENGEN EXPERIENCE"
                             }, void 0, false, {
                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                lineNumber: 1796,
+                                lineNumber: 1806,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -6083,7 +6093,7 @@ function SpainVisaPage() {
                                 children: "Spain is waiting."
                             }, void 0, false, {
                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                lineNumber: 1799,
+                                lineNumber: 1809,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6091,7 +6101,7 @@ function SpainVisaPage() {
                                 children: "Let our Dubai visa specialists take care of the paperwork, appointment booking, and file verification. Speak with us today."
                             }, void 0, false, {
                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                lineNumber: 1802,
+                                lineNumber: 1812,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6103,7 +6113,7 @@ function SpainVisaPage() {
                                         children: "Book Free Visa Consultation"
                                     }, void 0, false, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 1806,
+                                        lineNumber: 1816,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -6116,30 +6126,30 @@ function SpainVisaPage() {
                                             children: "Chat on WhatsApp"
                                         }, void 0, false, {
                                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                            lineNumber: 1818,
+                                            lineNumber: 1828,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                        lineNumber: 1812,
+                                        lineNumber: 1822,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                lineNumber: 1805,
+                                lineNumber: 1815,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                        lineNumber: 1795,
+                        lineNumber: 1805,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                lineNumber: 1783,
+                lineNumber: 1793,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6157,7 +6167,7 @@ function SpainVisaPage() {
                                 children: "Apply Now"
                             }, void 0, false, {
                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                lineNumber: 1834,
+                                lineNumber: 1844,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6165,13 +6175,13 @@ function SpainVisaPage() {
                                 children: "→"
                             }, void 0, false, {
                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                lineNumber: 1835,
+                                lineNumber: 1845,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                        lineNumber: 1830,
+                        lineNumber: 1840,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -6184,18 +6194,18 @@ function SpainVisaPage() {
                             children: "💬 WhatsApp Chat"
                         }, void 0, false, {
                             fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                            lineNumber: 1843,
+                            lineNumber: 1853,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                        lineNumber: 1837,
+                        lineNumber: 1847,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                lineNumber: 1826,
+                lineNumber: 1836,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6211,7 +6221,7 @@ function SpainVisaPage() {
                                 children: "✕"
                             }, void 0, false, {
                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                lineNumber: 1851,
+                                lineNumber: 1861,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6219,13 +6229,13 @@ function SpainVisaPage() {
                                 children: "Have questions? Chat with our Dubai visa expert live!"
                             }, void 0, false, {
                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                lineNumber: 1858,
+                                lineNumber: 1868,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                        lineNumber: 1850,
+                        lineNumber: 1860,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -6243,37 +6253,37 @@ function SpainVisaPage() {
                                     className: "jsx-4c3226a5b4c3c4ec"
                                 }, void 0, false, {
                                     fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                    lineNumber: 1869,
+                                    lineNumber: 1879,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                lineNumber: 1868,
+                                lineNumber: 1878,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "jsx-4c3226a5b4c3c4ec" + " " + "absolute -top-1 -right-1 w-4 h-4 bg-amber-400 rounded-full border-2 border-white animate-pulse"
                             }, void 0, false, {
                                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                                lineNumber: 1871,
+                                lineNumber: 1881,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                        lineNumber: 1861,
+                        lineNumber: 1871,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-                lineNumber: 1848,
+                lineNumber: 1858,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/visa-services/spain-visa-from-uae/page.tsx",
-        lineNumber: 194,
+        lineNumber: 204,
         columnNumber: 5
     }, this);
 }

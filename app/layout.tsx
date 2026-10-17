@@ -3,9 +3,7 @@ import { Inter, Great_Vibes } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
-/* ─────────────────────────────────────────────
-   FONTS
-───────────────────────────────────────────── */
+// Fonts
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -19,9 +17,7 @@ const greatVibes = Great_Vibes({
   display: "swap",
 });
 
-/* ─────────────────────────────────────────────
-   VIEWPORT
-───────────────────────────────────────────── */
+// Viewport
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
@@ -30,9 +26,7 @@ export const viewport: Viewport = {
   themeColor: "#063024",
 };
 
-/* ─────────────────────────────────────────────
-   METADATA
-───────────────────────────────────────────── */
+// Metadata
 export const metadata: Metadata = {
   title: "Eshaare Tours | Dubai Travel & Tour Specialists",
   description:
@@ -78,16 +72,12 @@ export const metadata: Metadata = {
   },
 };
 
-/* ─────────────────────────────────────────────
-   LAYOUT TYPES
-───────────────────────────────────────────── */
+// Layout types
 interface LayoutProps {
   children: React.ReactNode;
 }
 
-/* ─────────────────────────────────────────────
-   ROOT LAYOUT
-───────────────────────────────────────────── */
+// Root layout
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html
@@ -205,12 +195,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           />
         </noscript>
         {/* End Google Tag Manager (noscript) */}
-        {/* ── MAIN ───────────────────────────────────── */}
+        {/* Main */}
         <main className="flex-1" id="top">
           {children}
         </main>
 
-        {/* ── FOOTER ─────────────────────────────────── */}
+        {/* Footer */}
         <footer className="site-footer" role="contentinfo">
           <div className="footer-inner">
             <div className="footer-top">

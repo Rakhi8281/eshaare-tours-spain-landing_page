@@ -1,8 +1,6 @@
 @import "tailwindcss";
 
-/* ─────────────────────────────────────────────
-   DESIGN TOKENS
-───────────────────────────────────────────── */
+/* Design Tokens */
 :root {
   --green: #063024;
   --mid: #085a42;
@@ -30,9 +28,7 @@
   --font-sans: var(--font-inter), "Inter", "Segoe UI", sans-serif;
 }
 
-/* ─────────────────────────────────────────────
-   BASE RESET
-───────────────────────────────────────────── */
+/* Base Reset */
 *,
 *::before,
 *::after {
@@ -80,9 +76,7 @@ a {
   text-decoration: none;
 }
 
-/* ─────────────────────────────────────────────
-   SITE SHELL / PAGE WRAPPER
-───────────────────────────────────────────── */
+/* Site Shell / Page Wrapper */
 .site-shell {
   background: var(--canvas);
   min-height: 100vh;
@@ -91,9 +85,7 @@ a {
   flex-direction: column;
 }
 
-/* ─────────────────────────────────────────────
-   GLASSMORPHISM UTILITY
-───────────────────────────────────────────── */
+/* Glassmorphism Utility */
 .glass {
   -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(16px);
@@ -102,9 +94,7 @@ a {
   box-shadow: var(--shadow-md);
 }
 
-/* ─────────────────────────────────────────────
-   TOPBAR / HEADER
-───────────────────────────────────────────── */
+/* Topbar / Header */
 .topbar {
   z-index: 50;
   -webkit-backdrop-filter: blur(20px);
@@ -277,9 +267,7 @@ a {
   gap: 10px;
 }
 
-/* ─────────────────────────────────────────────
-   BUTTONS / PILLS
-───────────────────────────────────────────── */
+/* Buttons / Pills */
 .pill {
   cursor: pointer;
   border: none;
@@ -340,9 +328,7 @@ a {
   box-shadow: 0 12px 32px rgba(37, 211, 102, 0.4);
 }
 
-/* ─────────────────────────────────────────────
-   SECTION UTILITIES
-───────────────────────────────────────────── */
+/* Section Utilities */
 .section-wrap {
   width: min(1280px, 100%);
   margin: auto;
@@ -381,9 +367,7 @@ a {
   max-width: 560px;
 }
 
-/* ─────────────────────────────────────────────
-   HERO SECTION
-───────────────────────────────────────────── */
+/* Hero Section */
 .hero {
   position: relative;
   min-height: 100svh;
@@ -545,9 +529,7 @@ a {
   }
 }
 
-/* ─────────────────────────────────────────────
-   TRUST BAR
-───────────────────────────────────────────── */
+/* Trust Bar */
 .trust-bar {
   background: var(--green);
   padding: 18px 20px;
@@ -586,9 +568,7 @@ a {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* ─────────────────────────────────────────────
-   SERVICES / TOURS SECTION
-───────────────────────────────────────────── */
+/* Services / Tours Section */
 .services-section {
   background: #fff;
 }
@@ -694,9 +674,7 @@ a {
   color: var(--green);
 }
 
-/* ─────────────────────────────────────────────
-   WHY CHOOSE SECTION
-───────────────────────────────────────────── */
+/* Why Choose Section */
 .why-section {
   background: var(--canvas);
 }
@@ -749,9 +727,7 @@ a {
   margin: 0;
 }
 
-/* ─────────────────────────────────────────────
-   ABOUT SECTION
-───────────────────────────────────────────── */
+/* About Section */
 .about-section {
   background: var(--warm);
 }
@@ -849,9 +825,7 @@ a {
   line-height: 1.6;
 }
 
-/* ─────────────────────────────────────────────
-   ENQUIRY CTA SECTION
-───────────────────────────────────────────── */
+/* Enquiry Cta Section */
 .cta-section {
   background: var(--green);
   position: relative;
@@ -940,9 +914,7 @@ a {
   transform: translateY(-2px);
 }
 
-/* ─────────────────────────────────────────────
-   CONTACT SECTION
-───────────────────────────────────────────── */
+/* Contact Section */
 .contact-section {
   background: #fff;
 }
@@ -1018,9 +990,7 @@ a {
   padding: 8px;
 }
 
-/* ─────────────────────────────────────────────
-   FOOTER
-───────────────────────────────────────────── */
+/* Footer */
 footer.site-footer {
   background: var(--green);
   color: rgba(255, 255, 255, 0.75);
@@ -1168,9 +1138,7 @@ footer.site-footer {
   margin-top: 6px;
 }
 
-/* ─────────────────────────────────────────────
-   FLOATING WHATSAPP
-───────────────────────────────────────────── */
+/* Floating Whatsapp */
 .floating-whatsapp {
   position: fixed;
   bottom: 32px;
@@ -1196,9 +1164,7 @@ footer.site-footer {
   color: #fff;
 }
 
-/* ─────────────────────────────────────────────
-   MOBILE STICKY BOTTOM BAR
-───────────────────────────────────────────── */
+/* Mobile Sticky Bottom Bar */
 .sticky-mobile-bar {
   display: none;
   position: fixed;
@@ -1241,9 +1207,7 @@ footer.site-footer {
   color: #fff;
 }
 
-/* ─────────────────────────────────────────────
-   ANIMATIONS / TRANSITIONS
-───────────────────────────────────────────── */
+/* Animations / Transitions */
 @media (prefers-reduced-motion: no-preference) {
   .fade-up {
     opacity: 0;
@@ -1271,9 +1235,7 @@ footer.site-footer {
   }
 }
 
-/* ─────────────────────────────────────────────
-   RESPONSIVE — TABLET (≤ 1100px)
-───────────────────────────────────────────── */
+/* Responsive — Tablet (≤ 1100px) */
 @media (width <=1100px) {
   .tour-grid {
     grid-template-columns: 1fr 1fr;
@@ -1317,9 +1279,7 @@ footer.site-footer {
   }
 }
 
-/* ─────────────────────────────────────────────
-   RESPONSIVE — MOBILE (≤ 768px)
-───────────────────────────────────────────── */
+/* Responsive — Mobile (≤ 768px) */
 @media (width <=768px) {
   .topbar nav {
     display: none;
@@ -1466,9 +1426,7 @@ footer.site-footer {
   }
 }
 
-/* ─────────────────────────────────────────────
-   RESPONSIVE — SMALL MOBILE (≤ 480px)
-───────────────────────────────────────────── */
+/* Responsive — Small Mobile (≤ 480px) */
 @media (width <=480px) {
   .topbar {
     padding: 6px 10px;
@@ -1618,9 +1576,7 @@ footer.site-footer {
   }
 }
 
-/* ─────────────────────────────────────────────
-   LEAD ENQUIRY FORM (GOOGLE FORM BACKEND)
-───────────────────────────────────────────── */
+/* Lead Enquiry Form (Google Form Backend) */
 .lead-form-container {
   background: rgba(255, 255, 255, 0.94);
   -webkit-backdrop-filter: blur(16px);
